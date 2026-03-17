@@ -1,0 +1,428 @@
+
+{
+  "metadata": {
+    "total_test_variants": 217,
+    "trainium_1_variants": 201,
+    "trainium_2_variants": 16,
+    "layout_algorithms": ["greedy", "smt", "naive"],
+    "note": "trn1 tests use all 3 algorithms; trn2 tests use only greedy and naive"
+  },
+  "trainium_1": {
+    "encoder_only_transformers": {
+      "bert-base-uncased": {
+        "batch_size": 8,
+        "sequence_length": 384,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "auto_cast": "matmult"
+      },
+      "bert-large-uncased": {
+        "batch_size": 4,
+        "sequence_length": 384,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "auto_cast": "matmult"
+      },
+      "albert-large-v2": {
+        "batch_size": 4,
+        "sequence_length": 512,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "auto_cast": "matmult"
+      },
+      "xlm-roberta-base": {
+        "batch_size": 2,
+        "sequence_length": 256,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "auto_cast": "matmult"
+      },
+      "google/electra-large-discriminator": {
+        "batch_size": 2,
+        "sequence_length": 512,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "auto_cast": "matmult"
+      }
+    },
+    "encoder_decoder_models": {
+      "facebook/bart-base": {
+        "batch_size": 2,
+        "sequence_length": 384,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "auto_cast": "matmult"
+      },
+      "sshleifer/distilbart-cnn-6-6": {
+        "batch_size": 4,
+        "sequence_length": 128,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "auto_cast": "matmult"
+      },
+      "whisper-large-v3-turbo-encoder": {
+        "batch_size": 1,
+        "sequence_length": 1500,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "auto_cast": "none",
+        "optimization_level": "-O1",
+        "additional_flags": [
+          "--enable-saturate-infinity",
+          "--enable-mixed-precision-accumulation",
+          "--enable-ccop-compute-overlap",
+          "--cc-pipeline-tiling-factor=2"
+        ]
+      },
+      "whisper-large-v3-turbo-decoder": {
+        "batch_size": 1,
+        "sequence_length": 100,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "auto_cast": "none",
+        "optimization_level": "-O1",
+        "additional_flags": [
+          "--enable-saturate-infinity",
+          "--enable-mixed-precision-accumulation",
+          "--enable-ccop-compute-overlap",
+          "--cc-pipeline-tiling-factor=2"
+        ]
+      }
+    },
+    "decoder_only_llms": {
+      "Ministral-4b-instruct": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1"
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2"
+        }
+      },
+      "OLMo-7B-Instruct": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1",
+          "variants": 5
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2",
+          "variants": 4
+        }
+      },
+      "OLMo-2-1124-7B": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1"
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2"
+        }
+      },
+      "granite-3.1-3b-a800m-instruct": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1",
+          "variants": 2
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2"
+        }
+      },
+      "vaultgemma-1b": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1",
+          "variants": 2
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2"
+        }
+      }
+    },
+    "mixture_of_experts": {
+      "OLMoE-1B-7B-0924": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1"
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2",
+          "variants": 2
+        }
+      },
+      "FlexOlmo-7x7B-1T": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1"
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2"
+        }
+      }
+    },
+    "multimodal_models": {
+      "Qwen2-Audio-7B": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1"
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2"
+        }
+      },
+      "Qwen3-Next-80B-A3B-Instruct": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 32,
+          "optimization_level": "-O1"
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 32,
+          "optimization_level": "-O2",
+          "variants": 2
+        }
+      },
+      "Qwen3-VL-8B-Thinking": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1",
+          "variants": 2
+        },
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2",
+          "variants": 2
+        }
+      },
+      "idefics-9b-instruct": {
+        "token_generation": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O2",
+          "variants": 2
+        }
+      },
+      "kosmos-2.5": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1"
+        }
+      },
+      "paligemma-3b-mix-224": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1,
+          "optimization_level": "-O1"
+        }
+      }
+    },
+    "cnn_architectures": {
+      "resnet50": {
+        "batch_size": 16,
+        "model_type": "cnn-training"
+      },
+      "unet": {
+        "batch_size": 4,
+        "model_type": "cnn-training",
+        "variants": 3
+      },
+      "vision-perceiver-conv": {
+        "batch_size": 4,
+        "framework": "XLA"
+      },
+      "vision-perceiver-learned": {
+        "auto_cast": "all",
+        "neuroncore_pipeline_cores": 1
+      },
+      "language-perceiver": {
+        "batch_size": 20
+      }
+    },
+    "additional_models": {
+      "mvp": {
+        "variants": [
+          {
+            "batch_size": 1,
+            "sequence_length": 128,
+            "tensor_parallel": 1
+          },
+          {
+            "batch_size": 1,
+            "sequence_length": 2048,
+            "tensor_parallel": 1,
+            "phase": "context_encoding",
+            "variants": 3
+          },
+          {
+            "batch_size": 1,
+            "sequence_length": 2048,
+            "tensor_parallel": 1,
+            "phase": "token_generation",
+            "variants": 2
+          }
+        ]
+      },
+      "plbart-base": {
+        "batch_size": 1,
+        "sequence_length": 128,
+        "tensor_parallel": 1
+      },
+      "musicgen-melody": {
+        "context_encoding": {
+          "batch_size": 1,
+          "sequence_length": 2048,
+          "tensor_parallel": 1
+        }
+      }
+    }
+  },
+  "trainium_2": {
+    "stable_diffusion_models": {
+      "sd-xl-unet-refiner": {
+        "precision": "bfloat16",
+        "model_type": "unet-inference"
+      },
+      "stable-diffusion-3.5-large-vae": {
+        "batch_size": 1,
+        "tensor_parallel": 1,
+        "precision": "bfloat16",
+        "model_type": "unet-inference",
+        "optimization_level": "-O1",
+        "auto_cast": "none"
+      },
+      "sd-2-unet-768x768": {
+        "resolution": "768x768",
+        "precision": "bfloat16",
+        "model_type": "unet-inference",
+        "dual_core": true,
+        "additional_flags": ["--vectorize-strided-dma"]
+      },
+      "sd-2-unet-512x512": {
+        "resolution": "512x512",
+        "precision": "bfloat16",
+        "model_type": "unet-inference",
+        "dual_core": true,
+        "additional_flags": ["--vectorize-strided-dma"]
+      }
+    },
+    "qwen_2_5_omni_7b": {
+      "vision-encoder": {
+        "model_type": "transformer",
+        "optimization_level": "-O1",
+        "auto_cast": "none",
+        "additional_flags": [
+          "--enable-saturate-infinity",
+          "--enable-mixed-precision-accumulation",
+          "--enable-ccop-compute-overlap",
+          "--cc-pipeline-tiling-factor=2"
+        ]
+      },
+      "talker-model": {
+        "batch_size": 1,
+        "sequence_length": 4096,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "optimization_level": "-O1",
+        "auto_cast": "none",
+        "additional_flags": [
+          "--enable-saturate-infinity",
+          "--enable-mixed-precision-accumulation",
+          "--enable-ccop-compute-overlap",
+          "--cc-pipeline-tiling-factor=2"
+        ]
+      },
+      "thinker-text-model": {
+        "batch_size": 1,
+        "sequence_length": 4096,
+        "tensor_parallel": 1,
+        "model_type": "transformer",
+        "optimization_level": "-O1",
+        "auto_cast": "none",
+        "additional_flags": [
+          "--enable-saturate-infinity",
+          "--enable-mixed-precision-accumulation",
+          "--enable-ccop-compute-overlap",
+          "--cc-pipeline-tiling-factor=2"
+        ]
+      },
+      "token2wav-model": {
+        "model_type": "transformer",
+        "optimization_level": "-O1",
+        "auto_cast": "none",
+        "additional_flags": [
+          "--enable-saturate-infinity",
+          "--enable-mixed-precision-accumulation",
+          "--enable-ccop-compute-overlap",
+          "--cc-pipeline-tiling-factor=2"
+        ]
+      }
+    }
+  },
+  "common_parameters": {
+    "precision": "bfloat16",
+    "layout_randomness_tolerance": {
+      "deterministic": 0.0,
+      "randomized": [0.1, 0.2, 0.3]
+    },
+    "hardware_targets": ["trn1", "trn2"],
+    "common_llm_flags": [
+      "--enable-ccop-compute-overlap",
+      "--lnc=1"
+    ],
+    "common_token_gen_flags": [
+    ]
+  }
+}
+

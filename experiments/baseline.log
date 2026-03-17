@@ -1,0 +1,3121 @@
+
+test0_vnc_large_mms_b2b_8_bf16_with_qor_1024_1024_1024_my_naive
+TpbSgCyclesSum                          : 243,140,304
+Tensorizer (sec)                        : 1
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 0
+production_total (sec)                  : 2
+maxrss (gb)                             : 0.1
+HLO instr.                              : not found
+Layout instr.                           : 303,111
+Tiling instr.                           : 1,241
+Backend instr.                           : 2,471
+num_operators                           : 9
+num_edges                               : 8
+Layout operator cost                    : 361,020
+Layout transpose cost                   : 16,531
+Layout (operator+transpose+IO) cost     : 377,551
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 1
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 0
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_FlexOlmo_7x7B_1T_bs_1_seq_2048_context_encoding_model_MODULE_e010cbb1c988625325e1_b339bd96_my_naive
+TpbSgCyclesSum                          : 149,675,009,559
+Tensorizer (sec)                        : 28
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 60
+production_total (sec)                  : 90
+maxrss (gb)                             : 4.4
+HLO instr.                              : 50
+Layout instr.                           : 7,006,611
+Tiling instr.                           : 75,536
+Backend instr.                           : 467,591
+num_operators                           : 78
+num_edges                               : 63
+Layout operator cost                    : 7,564,732
+Layout transpose cost                   : 650,934
+Layout (operator+transpose+IO) cost     : 8,215,666
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 51
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 14
+num_pf_transposes                       : 32
+num_nonlocal_tensors                    : 0
+subgraphs                               : 16
+
+test_FlexOlmo_7x7B_1T_bs_1_seq_2048_token_generation_model_MODULE_5cca1c1d9203d88de7fe_226b6d48_my_naive
+TpbSgCyclesSum                          : 13,928,509,677
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 29
+production_total (sec)                  : 36
+maxrss (gb)                             : 1.4
+HLO instr.                              : 380
+Layout instr.                           : 13,817,017
+Tiling instr.                           : 69,861
+Backend instr.                           : 179,076
+num_operators                           : 95
+num_edges                               : 108
+Layout operator cost                    : 9,445,717
+Layout transpose cost                   : 51,989
+Layout (operator+transpose+IO) cost     : 9,497,706
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 42
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 7
+num_pf_transposes                       : 31
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Llama_4_Scout_17B_16E_Instruct_bs_1_seq_2048_context_encoding_model_MODULE_7f6aedd57eb201c2c0a7_b6089732_my_naive
+TpbSgCyclesSum                          : 62,452,668,470
+Tensorizer (sec)                        : 9
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 88
+production_total (sec)                  : 98
+maxrss (gb)                             : 3.6
+HLO instr.                              : 254
+Layout instr.                           : 48,423,230
+Tiling instr.                           : 353,502
+Backend instr.                           : 730,557
+num_operators                           : 61
+num_edges                               : 132
+Layout operator cost                    : 66,795,477
+Layout transpose cost                   : 12,909,630
+Layout (operator+transpose+IO) cost     : 79,705,107
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 31
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 26
+num_nonlocal_tensors                    : 0
+subgraphs                               : 4
+
+test_Llama_4_Scout_17B_16E_Instruct_bs_1_seq_2048_token_generation_model_MODULE_de20dd89898aee9b0880_5d041e77_my_naive
+TpbSgCyclesSum                          : 14,278,084,132
+Tensorizer (sec)                        : 12
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 55
+production_total (sec)                  : 68
+maxrss (gb)                             : 2.1
+HLO instr.                              : 399
+Layout instr.                           : 16,967,896
+Tiling instr.                           : 172,444
+Backend instr.                           : 379,685
+num_operators                           : 89
+num_edges                               : 120
+Layout operator cost                    : 16,828,761
+Layout transpose cost                   : 23,119
+Layout (operator+transpose+IO) cost     : 16,851,880
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 29
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 27
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Ministral_4b_instruct_bs_1_seq_2048_context_encoding_model_MODULE_de912ef248e892c051fa_233461aa_my_naive
+TpbSgCyclesSum                          : 154,373,608,834
+Tensorizer (sec)                        : 4
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 6
+production_total (sec)                  : 12
+maxrss (gb)                             : 0.7
+HLO instr.                              : 78
+Layout instr.                           : 10,629,423
+Tiling instr.                           : 114,028
+Backend instr.                           : 87,451
+num_operators                           : 69
+num_edges                               : 68
+Layout operator cost                    : 9,929,144
+Layout transpose cost                   : 1,603,644
+Layout (operator+transpose+IO) cost     : 11,532,788
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 30
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 5
+num_pf_transposes                       : 13
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_Ministral_4b_instruct_bs_1_seq_2048_token_generation_model_MODULE_dc8db8974489f60bb5ee_a64ca25e_my_naive
+TpbSgCyclesSum                          : 3,294,612,338
+Tensorizer (sec)                        : 5
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 5
+production_total (sec)                  : 11
+maxrss (gb)                             : 0.3
+HLO instr.                              : 327
+Layout instr.                           : 3,302,632
+Tiling instr.                           : 27,957
+Backend instr.                           : 54,650
+num_operators                           : 70
+num_edges                               : 100
+Layout operator cost                    : 4,550,606
+Layout transpose cost                   : 487,583
+Layout (operator+transpose+IO) cost     : 5,038,189
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 33
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 2
+num_pf_transposes                       : 27
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_OLMoE_1B_7B_0924_bs_1_seq_2048_context_encoding_model_MODULE_23a1550d3ff702f3aab3_747e44c5_my_naive
+TpbSgCyclesSum                          : not found
+production_total (sec)                  : 0
+maxrss (gb)                             : not found
+HLO instr.                              : not found
+Layout instr.                           : not found
+Tiling instr.                           : not found
+Backend instr.                           : not found
+num_operators                           : not found
+num_edges                               : not found
+Layout operator cost                    : not found
+Layout transpose cost                   : not found
+Layout (operator+transpose+IO) cost     : not found
+Layout DMA cost                         : not found
+Layout D2D cost                         : not found
+num_layout_transposes                   : not found
+estimated_non_local_tensors             : not found
+num_io_transposes                       : not found
+num_pf_transposes                       : not found
+num_nonlocal_tensors                    : not found
+subgraphs                               : not found
+
+Errors found:
+  2026-03-10 11:19:13.564345: E hilo/hlo_passes/NeuronHloVerifier.cc:370] [ERROR] [NCC_EVRF028] Operation AwsNeuronRmsNorm encountered size mismatch along the specified (normalization) dimension 3. The first tensor has dimension size 128, but the second tensor has dimension size 2048 along the normalization axis. Ensure that the dimension size matches for the two tensors along the specified axis.
+  2026-03-10T11:19:13Z INFO 24096 [job.HLOToTensorizer.0]: 2026-03-10 11:19:13.564368: E hilo/hlo_passes/NeuronHloVerifier.cc:370] [ERROR] [NCC_EVRF028] Operation AwsNeuronRmsNorm encountered size mismatch along the specified (normalization) dimension 3. The first tensor has dimension size 128, but the second tensor has dimension size 2048 along the normalization axis. Ensure that the dimension size matches for the two tensors along the specified axis.
+  2026-03-10T11:19:13Z USER 24096 [neuronxcc.driver.CommandDriver]: 2026-03-10 11:19:13.564368: E hilo/hlo_passes/NeuronHloVerifier.cc:370] [ERROR] [NCC_EVRF028] Operation AwsNeuronRmsNorm encountered size mismatch along the specified (normalization) dimension 3. The first tensor has dimension size 128, but the second tensor has dimension size 2048 along the normalization axis. Ensure that the dimension size matches for the two tensors along the specified axis.
+
+test_OLMoE_1B_7B_0924_bs_1_seq_2048_context_encoding_model_MODULE_e6c5f210918aa730683c_fe085657_my_naive
+TpbSgCyclesSum                          : 104,226,177,128
+Tensorizer (sec)                        : 12
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 25
+production_total (sec)                  : 38
+maxrss (gb)                             : 3.6
+HLO instr.                              : 247
+Layout instr.                           : 2,751,944
+Tiling instr.                           : 18,737
+Backend instr.                           : 252,119
+num_operators                           : 97
+num_edges                               : 105
+Layout operator cost                    : 3,809,757
+Layout transpose cost                   : 288,323
+Layout (operator+transpose+IO) cost     : 4,098,080
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 44
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 2
+num_pf_transposes                       : 40
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_OLMoE_1B_7B_0924_bs_1_seq_2048_token_generation_model_MODULE_aa3ecf3d5bd783c49bfe_a85a317e_my_naive
+TpbSgCyclesSum                          : 3,628,950,612
+Tensorizer (sec)                        : 12
+Layout (sec)                            : 3
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 17
+maxrss (gb)                             : 0.3
+HLO instr.                              : 648
+Layout instr.                           : 4,792,782
+Tiling instr.                           : 29,914
+Backend instr.                           : 51,734
+num_operators                           : 169
+num_edges                               : 238
+Layout operator cost                    : 44,728,619
+Layout transpose cost                   : 74,551
+Layout (operator+transpose+IO) cost     : 44,803,170
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 83
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 78
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_OLMoE_1B_7B_0924_bs_1_seq_2048_token_generation_model_MODULE_b627713df98508ccda0b_64534e1d_my_naive
+TpbSgCyclesSum                          : 5,889,692,205
+Tensorizer (sec)                        : 73
+Layout (sec)                            : 33
+BackendDriver (sec)                      : 9
+production_total (sec)                  : 84
+maxrss (gb)                             : 0.6
+HLO instr.                              : 2,668
+Layout instr.                           : 8,492,595
+Tiling instr.                           : 51,168
+Backend instr.                           : 97,121
+num_operators                           : 729
+num_edges                               : 910
+Layout operator cost                    : 8,127,710
+Layout transpose cost                   : 807,617
+Layout (operator+transpose+IO) cost     : 8,935,327
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 324
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 51
+num_pf_transposes                       : 241
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_OLMoE_1B_7B_0924_bs_1_seq_2048_token_generation_model_MODULE_d5c347ef54de68e3addc_75386316_my_naive
+TpbSgCyclesSum                          : 3,620,541,027
+Tensorizer (sec)                        : 12
+Layout (sec)                            : 3
+BackendDriver (sec)                      : 5
+production_total (sec)                  : 18
+maxrss (gb)                             : 0.3
+HLO instr.                              : 648
+Layout instr.                           : 4,792,782
+Tiling instr.                           : 29,914
+Backend instr.                           : 51,734
+num_operators                           : 169
+num_edges                               : 238
+Layout operator cost                    : 44,728,619
+Layout transpose cost                   : 74,551
+Layout (operator+transpose+IO) cost     : 44,803,170
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 83
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 78
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_OLMo_2_1124_7B_bs_1_seq_2048_context_encoding_model_MODULE_b1ae2e7373b6f90bb499_fa07a7ae_my_naive
+TpbSgCyclesSum                          : 30,047,515,604
+Tensorizer (sec)                        : 28
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 32
+production_total (sec)                  : 60
+maxrss (gb)                             : 3.0
+HLO instr.                              : 49
+Layout instr.                           : 8,564,869
+Tiling instr.                           : 80,196
+Backend instr.                           : 239,752
+num_operators                           : 54
+num_edges                               : 46
+Layout operator cost                    : 8,887,547
+Layout transpose cost                   : 1,390,231
+Layout (operator+transpose+IO) cost     : 10,277,778
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 51
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 15
+num_pf_transposes                       : 28
+num_nonlocal_tensors                    : 0
+subgraphs                               : 15
+
+test_OLMo_2_1124_7B_bs_1_seq_2048_token_generation_model_MODULE_627c886c5b983c4232d7_577258bb_my_naive
+TpbSgCyclesSum                          : 50,913,844,435
+Tensorizer (sec)                        : 142
+Layout (sec)                            : 79
+BackendDriver (sec)                      : 62
+production_total (sec)                  : 205
+maxrss (gb)                             : 2.6
+HLO instr.                              : 4,228
+Layout instr.                           : 27,330,532
+Tiling instr.                           : 267,070
+Backend instr.                           : 503,949
+num_operators                           : 1097
+num_edges                               : 1438
+Layout operator cost                    : 36,962,670
+Layout transpose cost                   : 760,685
+Layout (operator+transpose+IO) cost     : 37,723,355
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 550
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 97
+num_pf_transposes                       : 385
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_context_encoding_model_MODULE_18d12557843a8deb3eaa_338523d7_my_naive
+TpbSgCyclesSum                          : 62,710,376,936
+Tensorizer (sec)                        : 35
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 3
+production_total (sec)                  : 40
+maxrss (gb)                             : 0.3
+HLO instr.                              : 83
+Layout instr.                           : 4,043,068
+Tiling instr.                           : 31,717
+Backend instr.                           : 50,583
+num_operators                           : 66
+num_edges                               : 77
+Layout operator cost                    : 4,466,073
+Layout transpose cost                   : 2,157,258
+Layout (operator+transpose+IO) cost     : 6,623,331
+Layout DMA cost                         : 3,502,925
+Layout D2D cost                         : 0
+num_layout_transposes                   : 23
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 19
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_context_encoding_model_MODULE_7f84e7ed9e073cfae95f_ddf3adf2_my_naive
+TpbSgCyclesSum                          : 120,028,946,947
+Tensorizer (sec)                        : 36
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 5
+production_total (sec)                  : 42
+maxrss (gb)                             : 0.4
+HLO instr.                              : 83
+Layout instr.                           : 5,220,924
+Tiling instr.                           : 38,977
+Backend instr.                           : 71,769
+num_operators                           : 66
+num_edges                               : 77
+Layout operator cost                    : 6,388,847
+Layout transpose cost                   : 2,868,610
+Layout (operator+transpose+IO) cost     : 9,257,457
+Layout DMA cost                         : 4,997,173
+Layout D2D cost                         : 0
+num_layout_transposes                   : 23
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 19
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_context_encoding_model_MODULE_81661c3dd75989b7577b_183437e3_my_naive
+TpbSgCyclesSum                          : 99,439,753,178
+Tensorizer (sec)                        : 37
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 42
+maxrss (gb)                             : 0.4
+HLO instr.                              : 83
+Layout instr.                           : 9,402,511
+Tiling instr.                           : 66,843
+Backend instr.                           : 69,994
+num_operators                           : 66
+num_edges                               : 77
+Layout operator cost                    : 8,492,868
+Layout transpose cost                   : 3,134,296
+Layout (operator+transpose+IO) cost     : 11,627,164
+Layout DMA cost                         : 4,169,628
+Layout D2D cost                         : 0
+num_layout_transposes                   : 27
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 19
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_context_encoding_model_MODULE_be0fd6bbd757591c35a3_54388b7d_my_naive
+TpbSgCyclesSum                          : 62,673,831,534
+Tensorizer (sec)                        : 35
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 3
+production_total (sec)                  : 39
+maxrss (gb)                             : 0.3
+HLO instr.                              : 83
+Layout instr.                           : 4,043,068
+Tiling instr.                           : 31,717
+Backend instr.                           : 50,583
+num_operators                           : 66
+num_edges                               : 77
+Layout operator cost                    : 4,466,073
+Layout transpose cost                   : 2,157,258
+Layout (operator+transpose+IO) cost     : 6,623,331
+Layout DMA cost                         : 3,502,925
+Layout D2D cost                         : 0
+num_layout_transposes                   : 23
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 19
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_context_encoding_model_MODULE_fea803c553c004eb84bb_4fa62bac_my_naive
+TpbSgCyclesSum                          : 147,275,402,049
+Tensorizer (sec)                        : 38
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 8
+production_total (sec)                  : 47
+maxrss (gb)                             : 0.5
+HLO instr.                              : 83
+Layout instr.                           : 10,943,631
+Tiling instr.                           : 76,303
+Backend instr.                           : 92,457
+num_operators                           : 66
+num_edges                               : 77
+Layout operator cost                    : 11,857,398
+Layout transpose cost                   : 3,912,284
+Layout (operator+transpose+IO) cost     : 15,769,682
+Layout DMA cost                         : 5,820,056
+Layout D2D cost                         : 0
+num_layout_transposes                   : 27
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 19
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_token_generation_model_MODULE_463626bb5b2812fe40b4_6859588a_my_naive
+TpbSgCyclesSum                          : 49,729,652,742
+Tensorizer (sec)                        : 147
+Layout (sec)                            : 80
+BackendDriver (sec)                      : 64
+production_total (sec)                  : 212
+maxrss (gb)                             : 2.7
+HLO instr.                              : 4,037
+Layout instr.                           : 27,463,242
+Tiling instr.                           : 273,818
+Backend instr.                           : 522,344
+num_operators                           : 1161
+num_edges                               : 1697
+Layout operator cost                    : 37,466,655
+Layout transpose cost                   : 2,714,273
+Layout (operator+transpose+IO) cost     : 40,180,928
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 643
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 99
+num_pf_transposes                       : 448
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_token_generation_model_MODULE_66e75388da7697cded69_7dd97333_my_naive
+TpbSgCyclesSum                          : 60,297,596,939
+Tensorizer (sec)                        : 147
+Layout (sec)                            : 80
+BackendDriver (sec)                      : 100
+production_total (sec)                  : 249
+maxrss (gb)                             : 4.0
+HLO instr.                              : 4,037
+Layout instr.                           : 43,977,025
+Tiling instr.                           : 402,042
+Backend instr.                           : 784,193
+num_operators                           : 1161
+num_edges                               : 1697
+Layout operator cost                    : 56,757,261
+Layout transpose cost                   : 789,213
+Layout (operator+transpose+IO) cost     : 57,546,474
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 610
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 98
+num_pf_transposes                       : 448
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_token_generation_model_MODULE_a263879d77ed8fecc93e_3f065e05_my_naive
+TpbSgCyclesSum                          : 60,367,021,416
+Tensorizer (sec)                        : 145
+Layout (sec)                            : 79
+BackendDriver (sec)                      : 101
+production_total (sec)                  : 248
+maxrss (gb)                             : 4.0
+HLO instr.                              : 4,037
+Layout instr.                           : 43,977,025
+Tiling instr.                           : 402,042
+Backend instr.                           : 784,193
+num_operators                           : 1161
+num_edges                               : 1697
+Layout operator cost                    : 56,757,261
+Layout transpose cost                   : 789,213
+Layout (operator+transpose+IO) cost     : 57,546,474
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 610
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 98
+num_pf_transposes                       : 448
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_token_generation_model_MODULE_beef5582ff219b3813d0_42bb88f2_my_naive
+TpbSgCyclesSum                          : 61,091,829,601
+Tensorizer (sec)                        : 148
+Layout (sec)                            : 80
+BackendDriver (sec)                      : 101
+production_total (sec)                  : 250
+maxrss (gb)                             : 3.9
+HLO instr.                              : 4,037
+Layout instr.                           : 44,386,666
+Tiling instr.                           : 408,666
+Backend instr.                           : 794,025
+num_operators                           : 1161
+num_edges                               : 1697
+Layout operator cost                    : 58,511,807
+Layout transpose cost                   : 2,714,273
+Layout (operator+transpose+IO) cost     : 61,226,080
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 643
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 99
+num_pf_transposes                       : 448
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_OLMo_7B_Instruct_bs_1_seq_2048_token_generation_model_MODULE_c56aa7fba21decdc623e_fc137309_my_naive
+TpbSgCyclesSum                          : 49,741,205,274
+Tensorizer (sec)                        : 148
+Layout (sec)                            : 80
+BackendDriver (sec)                      : 63
+production_total (sec)                  : 212
+maxrss (gb)                             : 2.7
+HLO instr.                              : 4,037
+Layout instr.                           : 27,463,626
+Tiling instr.                           : 273,818
+Backend instr.                           : 522,344
+num_operators                           : 1161
+num_edges                               : 1697
+Layout operator cost                    : 37,466,994
+Layout transpose cost                   : 2,714,273
+Layout (operator+transpose+IO) cost     : 40,181,267
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 643
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 99
+num_pf_transposes                       : 448
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Olmo_3_7B_Think_bs_1_seq_2048_context_encoding_model_MODULE_e6a2aaf6c5144b7c4cb8_a841cf10_my_naive
+TpbSgCyclesSum                          : 35,881,063,674
+Tensorizer (sec)                        : 8
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 23
+production_total (sec)                  : 32
+maxrss (gb)                             : 1.5
+HLO instr.                              : 202
+Layout instr.                           : 27,063,331
+Tiling instr.                           : 253,426
+Backend instr.                           : 264,412
+num_operators                           : 94
+num_edges                               : 104
+Layout operator cost                    : 28,041,554
+Layout transpose cost                   : 11,908,376
+Layout (operator+transpose+IO) cost     : 39,949,930
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 69
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 7
+num_pf_transposes                       : 39
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_Olmo_3_7B_Think_bs_1_seq_2048_token_generation_model_MODULE_0632c034a866bb24388b_aa8e011b_my_naive
+TpbSgCyclesSum                          : not found
+production_total (sec)                  : 0
+maxrss (gb)                             : not found
+HLO instr.                              : not found
+Layout instr.                           : not found
+Tiling instr.                           : not found
+Backend instr.                           : not found
+num_operators                           : not found
+num_edges                               : not found
+Layout operator cost                    : not found
+Layout transpose cost                   : not found
+Layout (operator+transpose+IO) cost     : not found
+Layout DMA cost                         : not found
+Layout D2D cost                         : not found
+num_layout_transposes                   : not found
+estimated_non_local_tensors             : not found
+num_io_transposes                       : not found
+num_pf_transposes                       : not found
+num_nonlocal_tensors                    : not found
+subgraphs                               : not found
+
+Errors found:
+  2026-03-10 09:54:20.172073: E hilo/hlo_passes/NeuronHloVerifier.cc:370] [ERROR] [NCC_EVRF028] Operation AwsNeuronRmsNorm encountered size mismatch along the specified (normalization) dimension 3. The first tensor has dimension size 128, but the second tensor has dimension size 4096 along the normalization axis. Ensure that the dimension size matches for the two tensors along the specified axis.
+  2026-03-10T09:54:20Z INFO 14645 [job.HLOToTensorizer.0]: 2026-03-10 09:54:20.172090: E hilo/hlo_passes/NeuronHloVerifier.cc:370] [ERROR] [NCC_EVRF028] Operation AwsNeuronRmsNorm encountered size mismatch along the specified (normalization) dimension 3. The first tensor has dimension size 128, but the second tensor has dimension size 4096 along the normalization axis. Ensure that the dimension size matches for the two tensors along the specified axis.
+  2026-03-10T09:54:20Z USER 14645 [neuronxcc.driver.CommandDriver]: 2026-03-10 09:54:20.172090: E hilo/hlo_passes/NeuronHloVerifier.cc:370] [ERROR] [NCC_EVRF028] Operation AwsNeuronRmsNorm encountered size mismatch along the specified (normalization) dimension 3. The first tensor has dimension size 128, but the second tensor has dimension size 4096 along the normalization axis. Ensure that the dimension size matches for the two tensors along the specified axis.
+
+test_Qwen2_Audio_7B_bs_1_seq_2048_context_encoding_model_MODULE_ccb5920d69b94c0ff701_0d53aa71_my_naive
+TpbSgCyclesSum                          : 6,067,951,835
+Tensorizer (sec)                        : 5
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 8
+production_total (sec)                  : 14
+maxrss (gb)                             : 0.6
+HLO instr.                              : 43
+Layout instr.                           : 5,073,914
+Tiling instr.                           : 57,462
+Backend instr.                           : 103,235
+num_operators                           : 52
+num_edges                               : 51
+Layout operator cost                    : 6,447,392
+Layout transpose cost                   : 4,332,964
+Layout (operator+transpose+IO) cost     : 10,780,356
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 35
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 23
+num_nonlocal_tensors                    : 0
+subgraphs                               : 5
+
+test_Qwen2_Audio_7B_bs_1_seq_2048_token_generation_model_MODULE_d3d769dd6d02e65e514a_1ea2f44b_my_naive
+TpbSgCyclesSum                          : 9,753,489,960
+Tensorizer (sec)                        : 14
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 22
+production_total (sec)                  : 37
+maxrss (gb)                             : 1.0
+HLO instr.                              : 572
+Layout instr.                           : 5,716,981
+Tiling instr.                           : 71,469
+Backend instr.                           : 151,063
+num_operators                           : 137
+num_edges                               : 170
+Layout operator cost                    : 7,673,003
+Layout transpose cost                   : 97,837
+Layout (operator+transpose+IO) cost     : 7,770,840
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 71
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 14
+num_pf_transposes                       : 49
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Qwen3_Next_80B_A3B_Instruct_bs_1_seq_2048_context_encoding_model_MODULE_4d02e2f21aab46144b5f_8a12a514_my_naive
+TpbSgCyclesSum                          : 16,987,295,791
+Tensorizer (sec)                        : 22
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 37
+production_total (sec)                  : 60
+maxrss (gb)                             : 2.4
+HLO instr.                              : 78
+Layout instr.                           : 4,872,541
+Tiling instr.                           : 55,877
+Backend instr.                           : 191,027
+num_operators                           : 51
+num_edges                               : 61
+Layout operator cost                    : 4,844,022
+Layout transpose cost                   : 287,413
+Layout (operator+transpose+IO) cost     : 5,131,435
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 28
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 25
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_Qwen3_Next_80B_A3B_Instruct_bs_1_seq_2048_token_generation_model_MODULE_1956641ecef5aa67f05a_a655083c_my_naive
+TpbSgCyclesSum                          : 4,131,560,226
+Tensorizer (sec)                        : 10
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 5
+production_total (sec)                  : 17
+maxrss (gb)                             : 0.4
+HLO instr.                              : 590
+Layout instr.                           : 4,050,740
+Tiling instr.                           : 33,454
+Backend instr.                           : 68,602
+num_operators                           : 133
+num_edges                               : 190
+Layout operator cost                    : 5,181,982
+Layout transpose cost                   : 19,677
+Layout (operator+transpose+IO) cost     : 5,201,659
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 38
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 34
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Qwen3_Next_80B_A3B_Instruct_bs_1_seq_2048_token_generation_model_MODULE_7c88d3bb8aef2249f299_a8970a31_my_naive
+TpbSgCyclesSum                          : 4,121,457,651
+Tensorizer (sec)                        : 10
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 5
+production_total (sec)                  : 17
+maxrss (gb)                             : 0.4
+HLO instr.                              : 590
+Layout instr.                           : 4,050,740
+Tiling instr.                           : 33,454
+Backend instr.                           : 68,602
+num_operators                           : 133
+num_edges                               : 190
+Layout operator cost                    : 5,181,982
+Layout transpose cost                   : 19,677
+Layout (operator+transpose+IO) cost     : 5,201,659
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 38
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 34
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_context_encoding_model_MODULE_33a7eaaa0538dcaccb60_2b85aa20_my_naive
+TpbSgCyclesSum                          : 77,828,215,305
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 9
+production_total (sec)                  : 16
+maxrss (gb)                             : 0.6
+HLO instr.                              : 82
+Layout instr.                           : 5,134,294
+Tiling instr.                           : 55,469
+Backend instr.                           : 118,210
+num_operators                           : 64
+num_edges                               : 63
+Layout operator cost                    : 6,838,220
+Layout transpose cost                   : 3,801,752
+Layout (operator+transpose+IO) cost     : 10,639,972
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 40
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 30
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_context_encoding_model_MODULE_a6d946b33e689d84011e_6cc7d671_my_naive
+TpbSgCyclesSum                          : 78,151,536,925
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 9
+production_total (sec)                  : 16
+maxrss (gb)                             : 0.7
+HLO instr.                              : 86
+Layout instr.                           : 5,164,070
+Tiling instr.                           : 55,743
+Backend instr.                           : 118,317
+num_operators                           : 71
+num_edges                               : 70
+Layout operator cost                    : 6,872,526
+Layout transpose cost                   : 3,822,608
+Layout (operator+transpose+IO) cost     : 10,695,134
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 47
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 35
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_context_encoding_model_MODULE_ac99d7654fa3fa3cd17c_48fcc937_my_naive
+TpbSgCyclesSum                          : 11,924,715,321
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 9
+production_total (sec)                  : 16
+maxrss (gb)                             : 0.6
+HLO instr.                              : 82
+Layout instr.                           : 5,134,294
+Tiling instr.                           : 55,469
+Backend instr.                           : 118,050
+num_operators                           : 64
+num_edges                               : 63
+Layout operator cost                    : 6,838,220
+Layout transpose cost                   : 3,801,752
+Layout (operator+transpose+IO) cost     : 10,639,972
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 40
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 30
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_context_encoding_model_MODULE_e2ae589bbaac9e78ac58_94f66257_my_naive
+TpbSgCyclesSum                          : 11,984,113,829
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 9
+production_total (sec)                  : 16
+maxrss (gb)                             : 0.6
+HLO instr.                              : 86
+Layout instr.                           : 5,171,143
+Tiling instr.                           : 55,456
+Backend instr.                           : 117,957
+num_operators                           : 66
+num_edges                               : 67
+Layout operator cost                    : 6,855,770
+Layout transpose cost                   : 3,787,564
+Layout (operator+transpose+IO) cost     : 10,643,334
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 39
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 31
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_context_encoding_model_MODULE_ff86a8615ba31d78647d_bb9a2058_my_naive
+TpbSgCyclesSum                          : 78,174,566,279
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 9
+production_total (sec)                  : 16
+maxrss (gb)                             : 0.7
+HLO instr.                              : 86
+Layout instr.                           : 5,164,070
+Tiling instr.                           : 55,743
+Backend instr.                           : 118,317
+num_operators                           : 71
+num_edges                               : 70
+Layout operator cost                    : 6,872,526
+Layout transpose cost                   : 3,822,608
+Layout (operator+transpose+IO) cost     : 10,695,134
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 47
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 35
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_token_generation_model_MODULE_0c5714630059b57a8f24_e5bb152a_my_naive
+TpbSgCyclesSum                          : 30,840,888,289
+Tensorizer (sec)                        : 200
+Layout (sec)                            : 118
+BackendDriver (sec)                      : 62
+production_total (sec)                  : 264
+maxrss (gb)                             : 2.6
+HLO instr.                              : 5,237
+Layout instr.                           : 29,866,279
+Tiling instr.                           : 263,929
+Backend instr.                           : 533,233
+num_operators                           : 1312
+num_edges                               : 1702
+Layout operator cost                    : 40,155,469
+Layout transpose cost                   : 502,134
+Layout (operator+transpose+IO) cost     : 40,657,603
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 476
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 110
+num_pf_transposes                       : 294
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_token_generation_model_MODULE_353c1b2743794c93ecb9_c15bdd80_my_naive
+TpbSgCyclesSum                          : 11,124,807,821
+Tensorizer (sec)                        : 10
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 18
+production_total (sec)                  : 29
+maxrss (gb)                             : 0.9
+HLO instr.                              : 590
+Layout instr.                           : 10,949,196
+Tiling instr.                           : 88,846
+Backend instr.                           : 179,161
+num_operators                           : 133
+num_edges                               : 190
+Layout operator cost                    : 13,827,752
+Layout transpose cost                   : 44,265
+Layout (operator+transpose+IO) cost     : 13,872,017
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 57
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 53
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_token_generation_model_MODULE_9d08cbd4a685e851f0b0_13e7dd81_my_naive
+TpbSgCyclesSum                          : 6,461,137,562
+Tensorizer (sec)                        : 15
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 30
+maxrss (gb)                             : 0.7
+HLO instr.                              : 636
+Layout instr.                           : 5,484,541
+Tiling instr.                           : 63,686
+Backend instr.                           : 133,159
+num_operators                           : 148
+num_edges                               : 183
+Layout operator cost                    : 7,308,139
+Layout transpose cost                   : 59,312
+Layout (operator+transpose+IO) cost     : 7,367,451
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 57
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 14
+num_pf_transposes                       : 35
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_token_generation_model_MODULE_cc5bee7ecbc4de0fb6ec_31986bfa_my_naive
+TpbSgCyclesSum                          : 30,822,410,237
+Tensorizer (sec)                        : 201
+Layout (sec)                            : 118
+BackendDriver (sec)                      : 62
+production_total (sec)                  : 265
+maxrss (gb)                             : 2.6
+HLO instr.                              : 5,237
+Layout instr.                           : 29,866,279
+Tiling instr.                           : 263,929
+Backend instr.                           : 533,233
+num_operators                           : 1312
+num_edges                               : 1702
+Layout operator cost                    : 40,155,469
+Layout transpose cost                   : 502,134
+Layout (operator+transpose+IO) cost     : 40,657,603
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 476
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 110
+num_pf_transposes                       : 294
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_token_generation_model_MODULE_f509638c7ccef85f2d4b_e22aa203_my_naive
+TpbSgCyclesSum                          : 6,454,441,321
+Tensorizer (sec)                        : 15
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 13
+production_total (sec)                  : 29
+maxrss (gb)                             : 0.7
+HLO instr.                              : 652
+Layout instr.                           : 5,480,383
+Tiling instr.                           : 63,623
+Backend instr.                           : 133,168
+num_operators                           : 155
+num_edges                               : 184
+Layout operator cost                    : 7,294,535
+Layout transpose cost                   : 63,426
+Layout (operator+transpose+IO) cost     : 7,357,961
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 59
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 14
+num_pf_transposes                       : 35
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_token_generation_model_MODULE_f807af7e372488a22ecc_c78a4f38_my_naive
+TpbSgCyclesSum                          : 6,499,303,631
+Tensorizer (sec)                        : 15
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 13
+production_total (sec)                  : 29
+maxrss (gb)                             : 0.7
+HLO instr.                              : 652
+Layout instr.                           : 5,480,383
+Tiling instr.                           : 63,623
+Backend instr.                           : 133,168
+num_operators                           : 155
+num_edges                               : 184
+Layout operator cost                    : 7,294,535
+Layout transpose cost                   : 63,426
+Layout (operator+transpose+IO) cost     : 7,357,961
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 59
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 14
+num_pf_transposes                       : 35
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_Qwen3_VL_8B_Thinking_bs_1_seq_2048_token_generation_model_MODULE_faa917fbe86b157f3c17_899a1408_my_naive
+TpbSgCyclesSum                          : 11,120,612,938
+Tensorizer (sec)                        : 14
+Layout (sec)                            : 3
+BackendDriver (sec)                      : 18
+production_total (sec)                  : 33
+maxrss (gb)                             : 0.9
+HLO instr.                              : 590
+Layout instr.                           : 10,949,196
+Tiling instr.                           : 88,846
+Backend instr.                           : 179,161
+num_operators                           : 133
+num_edges                               : 190
+Layout operator cost                    : 13,827,752
+Layout transpose cost                   : 44,265
+Layout (operator+transpose+IO) cost     : 13,872,017
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 57
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 53
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_albert_large_v2_type_auto_bs_4_seq_512_MODULE_6199784313081317653_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : 44,933,064,793
+Tensorizer (sec)                        : 19
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 20
+production_total (sec)                  : 39
+maxrss (gb)                             : 1.4
+HLO instr.                              : 211
+Layout instr.                           : 32,116,791
+Tiling instr.                           : 72,050
+Backend instr.                           : 177,745
+num_operators                           : 150
+num_edges                               : 271
+Layout operator cost                    : 42,952,381
+Layout transpose cost                   : 4,087,218
+Layout (operator+transpose+IO) cost     : 47,039,599
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 238
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 22
+num_pf_transposes                       : 66
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_bert_base_uncased_type_auto_bs_8_seq_384_MODULE_4105355656076190947_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : 18,538,230,026
+Tensorizer (sec)                        : 14
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 29
+maxrss (gb)                             : 0.9
+HLO instr.                              : 132
+Layout instr.                           : 18,906,962
+Tiling instr.                           : 59,517
+Backend instr.                           : 134,329
+num_operators                           : 106
+num_edges                               : 191
+Layout operator cost                    : 22,351,965
+Layout transpose cost                   : 2,095,525
+Layout (operator+transpose+IO) cost     : 24,447,490
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 168
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 45
+num_pf_transposes                       : 46
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_bert_large_uncased_type_auto_bs_4_seq_384_MODULE_10369848347162771062_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : 28,722,097,167
+Tensorizer (sec)                        : 22
+Layout (sec)                            : 3
+BackendDriver (sec)                      : 22
+production_total (sec)                  : 45
+maxrss (gb)                             : 1.3
+HLO instr.                              : 480
+Layout instr.                           : 28,619,570
+Tiling instr.                           : 106,641
+Backend instr.                           : 238,280
+num_operators                           : 218
+num_edges                               : 399
+Layout operator cost                    : 37,104,149
+Layout transpose cost                   : 5,529,138
+Layout (operator+transpose+IO) cost     : 42,633,287
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 344
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 93
+num_pf_transposes                       : 94
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_cnn_my_naive
+TpbSgCyclesSum                          : 957,733,777
+Tensorizer (sec)                        : 13
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 1
+production_total (sec)                  : 15
+maxrss (gb)                             : 0.4
+HLO instr.                              : 308
+Layout instr.                           : 936,253
+Tiling instr.                           : 3,216
+Backend instr.                           : 12,072
+num_operators                           : 63
+num_edges                               : 58
+Layout operator cost                    : 924,830
+Layout transpose cost                   : 322,759
+Layout (operator+transpose+IO) cost     : 1,247,589
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 32
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 9
+num_pf_transposes                       : 14
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_ctc_aed_b24_seq512_my_naive
+TpbSgCyclesSum                          : not found
+Tensorizer (sec)                        : 227
+Layout (sec)                            : 12
+production_total (sec)                  : 1
+maxrss (gb)                             : not found
+HLO instr.                              : 1,046
+Layout instr.                           : 171,085,582
+Tiling instr.                           : 906,438
+Backend instr.                           : not found
+num_operators                           : 1689
+num_edges                               : 2591
+Layout operator cost                    : 334,565,658
+Layout transpose cost                   : 22,055,405
+Layout (operator+transpose+IO) cost     : 356,621,063
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 1519
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 245
+num_pf_transposes                       : 560
+num_nonlocal_tensors                    : 0
+subgraphs                               : 6
+
+test_ctc_aed_b4_seq5000_my_fix_naive
+TpbSgCyclesSum                          : not found
+Tensorizer (sec)                        : 452
+Layout (sec)                            : 10
+BackendDriver (sec)                      : 1078
+production_total (sec)                  : 1533
+maxrss (gb)                             : 46.1
+HLO instr.                              : 1,002
+Layout instr.                           : 136,862,519
+Tiling instr.                           : 444,229
+Backend instr.                           : 3,776,700
+num_operators                           : 1951
+num_edges                               : 3508
+Layout operator cost                    : 139,186,843
+Layout transpose cost                   : 16,807,152
+Layout (operator+transpose+IO) cost     : 155,993,995
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 2080
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 355
+num_pf_transposes                       : 851
+num_nonlocal_tensors                    : 0
+subgraphs                               : 6
+
+Errors found:
+  Inference failed (from log-compile.txt)
+
+test_facebook_bart_base_type_auto_bs_2_seq_384_MODULE_16273610656918386787_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : 2,379,302,009
+Tensorizer (sec)                        : 15
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 3
+production_total (sec)                  : 19
+maxrss (gb)                             : 0.3
+HLO instr.                              : 572
+Layout instr.                           : 4,456,547
+Tiling instr.                           : 15,094
+Backend instr.                           : 32,890
+num_operators                           : 93
+num_edges                               : 174
+Layout operator cost                    : 5,731,944
+Layout transpose cost                   : 1,287,215
+Layout (operator+transpose+IO) cost     : 7,019,159
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 139
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 100
+num_pf_transposes                       : 38
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_google_electra_large_discriminator_type_auto_bs_2_seq_512_MODULE_14975106339664645707_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : 23,134,707,174
+Tensorizer (sec)                        : 26
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 41
+maxrss (gb)                             : 0.8
+HLO instr.                              : 132
+Layout instr.                           : 18,902,670
+Tiling instr.                           : 58,688
+Backend instr.                           : 133,414
+num_operators                           : 190
+num_edges                               : 347
+Layout operator cost                    : 26,297,698
+Layout transpose cost                   : 4,622,573
+Layout (operator+transpose+IO) cost     : 30,920,271
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 300
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 81
+num_pf_transposes                       : 82
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_granite_3_1_3b_a800m_instruct_bs_1_seq_2048_context_encoding_model_MODULE_0660a9af043aa802f6fa_d08287f9_my_naive
+TpbSgCyclesSum                          : 11,292,420,249
+Tensorizer (sec)                        : 5
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 5
+production_total (sec)                  : 11
+maxrss (gb)                             : 0.5
+HLO instr.                              : 139
+Layout instr.                           : 1,093,302
+Tiling instr.                           : 12,293
+Backend instr.                           : 72,555
+num_operators                           : 90
+num_edges                               : 65
+Layout operator cost                    : 3,548,095
+Layout transpose cost                   : 1,048,262
+Layout (operator+transpose+IO) cost     : 4,596,357
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 28
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 23
+num_nonlocal_tensors                    : 0
+subgraphs                               : 12
+
+test_granite_3_1_3b_a800m_instruct_bs_1_seq_2048_context_encoding_model_MODULE_2eaa04e83fcb362de79b_982c158d_my_naive
+TpbSgCyclesSum                          : 184,787,371,995
+Tensorizer (sec)                        : 9
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 7
+production_total (sec)                  : 17
+maxrss (gb)                             : 0.6
+HLO instr.                              : 251
+Layout instr.                           : 4,685,229
+Tiling instr.                           : 35,612
+Backend instr.                           : 90,054
+num_operators                           : 97
+num_edges                               : 105
+Layout operator cost                    : 28,404,484
+Layout transpose cost                   : 1,729,414
+Layout (operator+transpose+IO) cost     : 30,133,898
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 60
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 5
+num_pf_transposes                       : 32
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_granite_3_1_3b_a800m_instruct_bs_1_seq_2048_context_encoding_model_MODULE_fbfb78b55ea054aef805_1ccc47dd_my_naive
+TpbSgCyclesSum                          : 11,273,370,785
+Tensorizer (sec)                        : 5
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 5
+production_total (sec)                  : 11
+maxrss (gb)                             : 0.5
+HLO instr.                              : 139
+Layout instr.                           : 1,093,302
+Tiling instr.                           : 12,293
+Backend instr.                           : 72,555
+num_operators                           : 90
+num_edges                               : 65
+Layout operator cost                    : 3,548,095
+Layout transpose cost                   : 1,048,262
+Layout (operator+transpose+IO) cost     : 4,596,357
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 28
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 4
+num_pf_transposes                       : 23
+num_nonlocal_tensors                    : 0
+subgraphs                               : 12
+
+test_granite_3_1_3b_a800m_instruct_bs_1_seq_2048_token_generation_model_MODULE_61cfffaa70a773ce9a3f_96f51408_my_naive
+TpbSgCyclesSum                          : 1,673,291,509
+Tensorizer (sec)                        : 13
+Layout (sec)                            : 3
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 17
+maxrss (gb)                             : 0.3
+HLO instr.                              : 720
+Layout instr.                           : 2,096,499
+Tiling instr.                           : 20,023
+Backend instr.                           : 40,325
+num_operators                           : 174
+num_edges                               : 235
+Layout operator cost                    : 2,375,640
+Layout transpose cost                   : 39,739
+Layout (operator+transpose+IO) cost     : 2,415,379
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 54
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 5
+num_pf_transposes                       : 50
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_granite_3_1_3b_a800m_instruct_bs_1_seq_2048_token_generation_model_MODULE_cc546ccec49df0c32569_2fb76326_my_naive
+TpbSgCyclesSum                          : 1,154,402,531
+Tensorizer (sec)                        : 7
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 10
+maxrss (gb)                             : 0.2
+HLO instr.                              : 390
+Layout instr.                           : 1,345,163
+Tiling instr.                           : 14,642
+Backend instr.                           : 29,639
+num_operators                           : 89
+num_edges                               : 118
+Layout operator cost                    : 1,616,646
+Layout transpose cost                   : 20,033
+Layout (operator+transpose+IO) cost     : 1,636,679
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 28
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 26
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_idefics_9b_instruct_bs_1_seq_2048_context_encoding_model_MODULE_32e068b253bd266cb1e0_ba0dd372_my_naive
+TpbSgCyclesSum                          : 17,922,672,339
+Tensorizer (sec)                        : 2
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 6
+maxrss (gb)                             : 0.4
+HLO instr.                              : 42
+Layout instr.                           : 3,432,732
+Tiling instr.                           : 17,134
+Backend instr.                           : 50,217
+num_operators                           : 48
+num_edges                               : 34
+Layout operator cost                    : 4,843,954
+Layout transpose cost                   : 838,207
+Layout (operator+transpose+IO) cost     : 5,682,161
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 24
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 5
+num_pf_transposes                       : 13
+num_nonlocal_tensors                    : 0
+subgraphs                               : 12
+
+test_idefics_9b_instruct_bs_1_seq_2048_context_encoding_model_MODULE_59dc53ea1b53de8462b6_c009eadd_my_naive
+TpbSgCyclesSum                          : 143,595,951,251
+Tensorizer (sec)                        : 3
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 8
+maxrss (gb)                             : 0.4
+HLO instr.                              : 87
+Layout instr.                           : 7,136,441
+Tiling instr.                           : 50,453
+Backend instr.                           : 71,963
+num_operators                           : 45
+num_edges                               : 59
+Layout operator cost                    : 7,270,441
+Layout transpose cost                   : 2,014,118
+Layout (operator+transpose+IO) cost     : 9,284,559
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 31
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 2
+num_pf_transposes                       : 21
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_idefics_9b_instruct_bs_1_seq_2048_context_encoding_model_MODULE_851642d793b5dd3ac6e1_f797af22_my_naive
+TpbSgCyclesSum                          : 17,918,089,611
+Tensorizer (sec)                        : 2
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 6
+maxrss (gb)                             : 0.4
+HLO instr.                              : 42
+Layout instr.                           : 3,432,732
+Tiling instr.                           : 17,134
+Backend instr.                           : 50,217
+num_operators                           : 48
+num_edges                               : 34
+Layout operator cost                    : 4,843,954
+Layout transpose cost                   : 838,207
+Layout (operator+transpose+IO) cost     : 5,682,161
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 24
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 5
+num_pf_transposes                       : 13
+num_nonlocal_tensors                    : 0
+subgraphs                               : 12
+
+test_idefics_9b_instruct_bs_1_seq_2048_context_encoding_model_MODULE_9bbed24f7d8a64de06e1_f30202c4_my_naive
+TpbSgCyclesSum                          : 98,506,327,287
+Tensorizer (sec)                        : 3
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 3
+production_total (sec)                  : 7
+maxrss (gb)                             : 0.3
+HLO instr.                              : 97
+Layout instr.                           : 9,104,020
+Tiling instr.                           : 58,896
+Backend instr.                           : 52,514
+num_operators                           : 61
+num_edges                               : 58
+Layout operator cost                    : 8,202,190
+Layout transpose cost                   : 1,921,416
+Layout (operator+transpose+IO) cost     : 10,123,606
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 27
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 17
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_idefics_9b_instruct_bs_1_seq_2048_context_encoding_model_MODULE_c4d21a18722498f1073a_8195bb5b_my_naive
+TpbSgCyclesSum                          : 17,929,282,869
+Tensorizer (sec)                        : 2
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 6
+maxrss (gb)                             : 0.4
+HLO instr.                              : 42
+Layout instr.                           : 3,432,732
+Tiling instr.                           : 17,134
+Backend instr.                           : 50,217
+num_operators                           : 48
+num_edges                               : 34
+Layout operator cost                    : 4,843,954
+Layout transpose cost                   : 838,207
+Layout (operator+transpose+IO) cost     : 5,682,161
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 24
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 5
+num_pf_transposes                       : 13
+num_nonlocal_tensors                    : 0
+subgraphs                               : 12
+
+test_idefics_9b_instruct_bs_1_seq_2048_context_encoding_model_MODULE_cc0cd249b9101619f34d_9210cfef_my_naive
+TpbSgCyclesSum                          : 105,429,336,146
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 6
+production_total (sec)                  : 13
+maxrss (gb)                             : 0.5
+HLO instr.                              : 112
+Layout instr.                           : 7,451,026
+Tiling instr.                           : 62,344
+Backend instr.                           : 93,449
+num_operators                           : 72
+num_edges                               : 95
+Layout operator cost                    : 8,034,795
+Layout transpose cost                   : 3,546,780
+Layout (operator+transpose+IO) cost     : 11,581,575
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 49
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 39
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_idefics_9b_instruct_bs_1_seq_2048_context_encoding_model_MODULE_dd320f5e583f09c1b061_c58235a1_my_naive
+TpbSgCyclesSum                          : 17,880,388,528
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 5
+production_total (sec)                  : 12
+maxrss (gb)                             : 0.5
+HLO instr.                              : 84
+Layout instr.                           : 7,136,537
+Tiling instr.                           : 58,318
+Backend instr.                           : 89,821
+num_operators                           : 45
+num_edges                               : 59
+Layout operator cost                    : 7,732,993
+Layout transpose cost                   : 3,522,757
+Layout (operator+transpose+IO) cost     : 11,255,750
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 31
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 21
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_idefics_9b_instruct_bs_1_seq_2048_token_generation_model_MODULE_1aa6fe7059cbcb205c6d_fca5f804_my_naive
+TpbSgCyclesSum                          : 5,750,783,970
+Tensorizer (sec)                        : 4
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 7
+production_total (sec)                  : 12
+maxrss (gb)                             : 0.4
+HLO instr.                              : 284
+Layout instr.                           : 4,265,397
+Tiling instr.                           : 37,628
+Backend instr.                           : 72,987
+num_operators                           : 63
+num_edges                               : 94
+Layout operator cost                    : 86,803,944
+Layout transpose cost                   : 64,918
+Layout (operator+transpose+IO) cost     : 86,868,862
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 34
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 2
+num_pf_transposes                       : 31
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_idefics_9b_instruct_bs_1_seq_2048_token_generation_model_MODULE_276e18e5370daff4a585_14bb390c_my_naive
+TpbSgCyclesSum                          : 5,818,158,503
+Tensorizer (sec)                        : 9
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 9
+production_total (sec)                  : 19
+maxrss (gb)                             : 0.5
+HLO instr.                              : 345
+Layout instr.                           : 4,266,323
+Tiling instr.                           : 45,353
+Backend instr.                           : 90,614
+num_operators                           : 68
+num_edges                               : 104
+Layout operator cost                    : 86,884,267
+Layout transpose cost                   : 62,527
+Layout (operator+transpose+IO) cost     : 86,946,794
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 33
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 31
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_idefics_9b_instruct_bs_1_seq_2048_token_generation_model_MODULE_5ed8de4bcd592ad60482_4f0634bb_my_naive
+TpbSgCyclesSum                          : 5,819,407,039
+Tensorizer (sec)                        : 9
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 9
+production_total (sec)                  : 19
+maxrss (gb)                             : 0.5
+HLO instr.                              : 345
+Layout instr.                           : 4,266,323
+Tiling instr.                           : 45,353
+Backend instr.                           : 90,614
+num_operators                           : 68
+num_edges                               : 104
+Layout operator cost                    : 86,884,267
+Layout transpose cost                   : 62,527
+Layout (operator+transpose+IO) cost     : 86,946,794
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 33
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 31
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_idefics_9b_instruct_bs_1_seq_2048_token_generation_model_MODULE_6d1d5e28b2fc6245cdf6_cccc0cf2_my_naive
+TpbSgCyclesSum                          : 10,525,753,242
+Tensorizer (sec)                        : 13
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 15
+production_total (sec)                  : 29
+maxrss (gb)                             : 0.8
+HLO instr.                              : 512
+Layout instr.                           : 7,505,653
+Tiling instr.                           : 74,601
+Backend instr.                           : 147,962
+num_operators                           : 121
+num_edges                               : 186
+Layout operator cost                    : 172,394,498
+Layout transpose cost                   : 124,969
+Layout (operator+transpose+IO) cost     : 172,519,467
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 65
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 5
+num_pf_transposes                       : 61
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_idefics_9b_instruct_bs_1_seq_2048_token_generation_model_MODULE_707f274f9d6ec9187dd7_39b7098c_my_naive
+TpbSgCyclesSum                          : 49,416,442,980
+Tensorizer (sec)                        : 136
+Layout (sec)                            : 73
+BackendDriver (sec)                      : 61
+production_total (sec)                  : 198
+maxrss (gb)                             : 2.6
+HLO instr.                              : 4,055
+Layout instr.                           : 26,793,696
+Tiling instr.                           : 265,040
+Backend instr.                           : 500,042
+num_operators                           : 1099
+num_edges                               : 1379
+Layout operator cost                    : 37,488,390
+Layout transpose cost                   : 2,682,771
+Layout (operator+transpose+IO) cost     : 40,171,161
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 581
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 98
+num_pf_transposes                       : 385
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_idefics_9b_instruct_bs_1_seq_2048_token_generation_model_MODULE_721f1af79f1d172c0ddf_2b9a6ba3_my_naive
+TpbSgCyclesSum                          : 77,438,543,408
+Tensorizer (sec)                        : 197
+Layout (sec)                            : 109
+BackendDriver (sec)                      : 147
+production_total (sec)                  : 345
+maxrss (gb)                             : 5.3
+HLO instr.                              : 5,835
+Layout instr.                           : 52,948,443
+Tiling instr.                           : 552,549
+Backend instr.                           : 1,064,001
+num_operators                           : 1254
+num_edges                               : 1924
+Layout operator cost                    : 1,370,578,417
+Layout transpose cost                   : 1,004,597
+Layout (operator+transpose+IO) cost     : 1,371,583,014
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 577
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 33
+num_pf_transposes                       : 545
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_idefics_9b_instruct_bs_1_seq_2048_token_generation_model_MODULE_b4352367d1c0286c09e2_dd2354e9_my_naive
+TpbSgCyclesSum                          : 5,829,453,898
+Tensorizer (sec)                        : 9
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 9
+production_total (sec)                  : 19
+maxrss (gb)                             : 0.5
+HLO instr.                              : 345
+Layout instr.                           : 4,266,323
+Tiling instr.                           : 45,353
+Backend instr.                           : 90,614
+num_operators                           : 68
+num_edges                               : 104
+Layout operator cost                    : 86,884,267
+Layout transpose cost                   : 62,527
+Layout (operator+transpose+IO) cost     : 86,946,794
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 33
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 31
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_idefics_9b_instruct_bs_1_seq_2048_token_generation_model_MODULE_c0cce8f031ef7c909481_260fbae1_my_naive
+TpbSgCyclesSum                          : 5,752,027,506
+Tensorizer (sec)                        : 4
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 7
+production_total (sec)                  : 12
+maxrss (gb)                             : 0.4
+HLO instr.                              : 284
+Layout instr.                           : 4,265,397
+Tiling instr.                           : 37,628
+Backend instr.                           : 72,987
+num_operators                           : 63
+num_edges                               : 94
+Layout operator cost                    : 86,803,944
+Layout transpose cost                   : 64,918
+Layout (operator+transpose+IO) cost     : 86,868,862
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 34
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 2
+num_pf_transposes                       : 31
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_kosmos_2_5_bs_1_seq_2048_context_encoding_model_MODULE_46b85e82ee8ac8fd8a46_aa185f83_my_naive
+TpbSgCyclesSum                          : 17,371,494,269
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 5
+production_total (sec)                  : 12
+maxrss (gb)                             : 0.4
+HLO instr.                              : 102
+Layout instr.                           : 2,130,087
+Tiling instr.                           : 26,302
+Backend instr.                           : 106,252
+num_operators                           : 42
+num_edges                               : 72
+Layout operator cost                    : 5,481,473
+Layout transpose cost                   : 3,602,315
+Layout (operator+transpose+IO) cost     : 9,083,788
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 29
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 5
+num_pf_transposes                       : 17
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_kosmos_2_patch14_224_bs_1_seq_2048_context_encoding_model_MODULE_33802bd3dd0763be2ca4_ef3362a2_my_naive
+TpbSgCyclesSum                          : 12,228,130,360
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 11
+maxrss (gb)                             : 0.3
+HLO instr.                              : 103
+Layout instr.                           : 2,434,492
+Tiling instr.                           : 26,723
+Backend instr.                           : 55,495
+num_operators                           : 46
+num_edges                               : 76
+Layout operator cost                    : 3,717,716
+Layout transpose cost                   : 1,748,081
+Layout (operator+transpose+IO) cost     : 5,465,797
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 29
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 5
+num_pf_transposes                       : 17
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_language_perceiver_B20_MODULE_6541578535163032455_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : 341,860,299,195
+Tensorizer (sec)                        : 675
+Layout (sec)                            : 352
+BackendDriver (sec)                      : 149
+production_total (sec)                  : 827
+maxrss (gb)                             : 5.8
+HLO instr.                              : 10,056
+Layout instr.                           : 124,014,233
+Tiling instr.                           : 456,852
+Backend instr.                           : 980,365
+num_operators                           : 2498
+num_edges                               : 1792
+Layout operator cost                    : 190,077,306
+Layout transpose cost                   : 16,850,961
+Layout (operator+transpose+IO) cost     : 206,928,267
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 1775
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 86
+num_pf_transposes                       : 88
+num_nonlocal_tensors                    : 0
+subgraphs                               : 5
+
+test_microsoft_deberta_v3_large_type_auto_bs_2_seq_512_MODULE_2884813566616500283_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : not found
+Tensorizer (sec)                        : 40
+Layout (sec)                            : not found
+production_total (sec)                  : 0
+maxrss (gb)                             : not found
+HLO instr.                              : 195
+Layout instr.                           : 144,510,244
+Tiling instr.                           : 550,761
+Backend instr.                           : not found
+num_operators                           : 60
+num_edges                               : 97
+Layout operator cost                    : 488,623,090
+Layout transpose cost                   : 1,131,403
+Layout (operator+transpose+IO) cost     : 489,754,493
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 76
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 82
+num_pf_transposes                       : 150
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+Errors found:
+  2026-03-10T11:13:57Z USER 16051 [neuronxcc.driver.CommandDriver]: [ERROR] [NCC_EXSP001] Size of HBM memory required for the model exceeds HBM limit of sunda. Needed more than 17,216,985,344 (16.03GB) vs. available bytes 17,179,869,184 (16.00GB). This may be due to compiler allocating high scratch pad memory for this model. - Check the target architecture flag to ensure you are compiling for correct target, or consider using smaller batches or applying model/tensor parallelism.
+  2026-03-10T11:13:57Z ERROR 16051 [neuronxcc.driver.CommandDriver]: neuronxlogger.error.NeuronAssertion: [ERROR] [NCC_EXSP001] Size of HBM memory required for the model exceeds HBM limit of sunda. Needed more than 17,216,985,344 (16.03GB) vs. available bytes 17,179,869,184 (16.00GB). This may be due to compiler allocating high scratch pad memory for this model. - Check the target architecture flag to ensure you are compiling for correct target, or consider using smaller batches or applying model/tensor parallelism.
+
+test_moshiko_pytorch_bf16_bs_1_seq_2048_token_generation_model_MODULE_b9af6a7d4fd6148cca67_4c3b8d52_my_naive
+TpbSgCyclesSum                          : 5,260,829,892
+Tensorizer (sec)                        : 5
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 8
+production_total (sec)                  : 14
+maxrss (gb)                             : 0.4
+HLO instr.                              : 307
+Layout instr.                           : 4,714,144
+Tiling instr.                           : 41,657
+Backend instr.                           : 80,129
+num_operators                           : 68
+num_edges                               : 102
+Layout operator cost                    : 88,818,270
+Layout transpose cost                   : 1,901,201
+Layout (operator+transpose+IO) cost     : 90,719,471
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 37
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 2
+num_pf_transposes                       : 31
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_musicgen_melody_bs_1_seq_2048_context_encoding_model_MODULE_5abcf46cdaab241254d6_da39bad3_my_naive
+TpbSgCyclesSum                          : 38,128,179,757
+Tensorizer (sec)                        : 19
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 1
+production_total (sec)                  : 20
+maxrss (gb)                             : 0.1
+HLO instr.                              : 80
+Layout instr.                           : 770,666
+Tiling instr.                           : 3,242
+Backend instr.                           : 8,686
+num_operators                           : 36
+num_edges                               : 58
+Layout operator cost                    : 1,019,691
+Layout transpose cost                   : 51,318
+Layout (operator+transpose+IO) cost     : 1,071,009
+Layout DMA cost                         : 691,729
+Layout D2D cost                         : 0
+num_layout_transposes                   : 18
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 2
+num_pf_transposes                       : 10
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_mvp_bs_1_seq_128_MODULE_37d56c9e4b50a1f3aa88_cb431220_my_naive
+TpbSgCyclesSum                          : 2,396,338,315
+Tensorizer (sec)                        : 31
+Layout (sec)                            : 8
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 36
+maxrss (gb)                             : 0.3
+HLO instr.                              : 1,256
+Layout instr.                           : 1,818,416
+Tiling instr.                           : 22,021
+Backend instr.                           : 43,287
+num_operators                           : 318
+num_edges                               : 536
+Layout operator cost                    : 33,614,088
+Layout transpose cost                   : 174,646
+Layout (operator+transpose+IO) cost     : 33,788,734
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 194
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 13
+num_pf_transposes                       : 182
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_128_MODULE_dd083db1cbd03a998776_874bef0b_my_naive
+TpbSgCyclesSum                          : 2,392,345,571
+Tensorizer (sec)                        : 31
+Layout (sec)                            : 8
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 36
+maxrss (gb)                             : 0.3
+HLO instr.                              : 1,256
+Layout instr.                           : 1,818,416
+Tiling instr.                           : 22,021
+Backend instr.                           : 43,287
+num_operators                           : 318
+num_edges                               : 536
+Layout operator cost                    : 33,614,088
+Layout transpose cost                   : 174,646
+Layout (operator+transpose+IO) cost     : 33,788,734
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 194
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 13
+num_pf_transposes                       : 182
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_context_encoding_model_MODULE_104f3b8d8de051cd1359_ddc7ece8_my_naive
+TpbSgCyclesSum                          : 760,707,177
+Tensorizer (sec)                        : 12
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 14
+maxrss (gb)                             : 0.3
+HLO instr.                              : 365
+Layout instr.                           : 922,034
+Tiling instr.                           : 11,829
+Backend instr.                           : 19,602
+num_operators                           : 46
+num_edges                               : 75
+Layout operator cost                    : 1,599,324
+Layout transpose cost                   : 791,114
+Layout (operator+transpose+IO) cost     : 2,390,438
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 24
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 18
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_context_encoding_model_MODULE_3467b1dd433f5f79d8ed_4dd4fff6_my_naive
+TpbSgCyclesSum                          : 4,555,178,310
+Tensorizer (sec)                        : 32
+Layout (sec)                            : 7
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 38
+maxrss (gb)                             : 0.3
+HLO instr.                              : 1,659
+Layout instr.                           : 2,770,258
+Tiling instr.                           : 22,846
+Backend instr.                           : 84,849
+num_operators                           : 197
+num_edges                               : 339
+Layout operator cost                    : 5,922,981
+Layout transpose cost                   : 1,190,712
+Layout (operator+transpose+IO) cost     : 7,113,693
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 87
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 85
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_context_encoding_model_MODULE_4bdb0fde4195fcc2858c_7234f84b_my_naive
+TpbSgCyclesSum                          : 1,814,349,685
+Tensorizer (sec)                        : 9
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 11
+maxrss (gb)                             : 0.2
+HLO instr.                              : 319
+Layout instr.                           : 801,438
+Tiling instr.                           : 9,396
+Backend instr.                           : 36,381
+num_operators                           : 37
+num_edges                               : 59
+Layout operator cost                    : 2,093,011
+Layout transpose cost                   : 1,152,822
+Layout (operator+transpose+IO) cost     : 3,245,833
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 17
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 15
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_context_encoding_model_MODULE_557fb7b94870f5bdd462_06132d5c_my_naive
+TpbSgCyclesSum                          : 1,815,183,946
+Tensorizer (sec)                        : 9
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 11
+maxrss (gb)                             : 0.2
+HLO instr.                              : 319
+Layout instr.                           : 801,438
+Tiling instr.                           : 9,396
+Backend instr.                           : 36,381
+num_operators                           : 37
+num_edges                               : 59
+Layout operator cost                    : 2,093,011
+Layout transpose cost                   : 1,152,822
+Layout (operator+transpose+IO) cost     : 3,245,833
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 17
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 15
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_context_encoding_model_MODULE_7e0535c4f2dccb6b1f49_616aa696_my_naive
+TpbSgCyclesSum                          : 4,343,269,985
+Tensorizer (sec)                        : 30
+Layout (sec)                            : 7
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 34
+maxrss (gb)                             : 0.3
+HLO instr.                              : 1,349
+Layout instr.                           : 2,594,507
+Tiling instr.                           : 18,563
+Backend instr.                           : 69,625
+num_operators                           : 176
+num_edges                               : 322
+Layout operator cost                    : 5,650,041
+Layout transpose cost                   : 1,195,966
+Layout (operator+transpose+IO) cost     : 6,846,007
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 89
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 87
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_context_encoding_model_MODULE_7eeaacaae5a48fa08bf7_666af8d4_my_naive
+TpbSgCyclesSum                          : 1,917,010,370
+Tensorizer (sec)                        : 40
+Layout (sec)                            : 10
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 46
+maxrss (gb)                             : 0.4
+HLO instr.                              : 1,725
+Layout instr.                           : 3,240,474
+Tiling instr.                           : 36,679
+Backend instr.                           : 46,386
+num_operators                           : 206
+num_edges                               : 355
+Layout operator cost                    : 4,666,224
+Layout transpose cost                   : 985,554
+Layout (operator+transpose+IO) cost     : 5,651,778
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 104
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 1
+num_pf_transposes                       : 78
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_context_encoding_model_MODULE_de83ced4dbc2aa1dd7e8_f5f1a8f9_my_naive
+TpbSgCyclesSum                          : 1,885,341,259
+Tensorizer (sec)                        : 11
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 13
+maxrss (gb)                             : 0.3
+HLO instr.                              : 346
+Layout instr.                           : 874,471
+Tiling instr.                           : 9,619
+Backend instr.                           : 37,220
+num_operators                           : 42
+num_edges                               : 67
+Layout operator cost                    : 2,188,597
+Layout transpose cost                   : 1,193,991
+Layout (operator+transpose+IO) cost     : 3,382,588
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 23
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 2
+num_pf_transposes                       : 16
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_token_generation_model_MODULE_2424e0422aff88341d00_ca2ddd81_my_naive
+TpbSgCyclesSum                          : 820,814,057
+Tensorizer (sec)                        : 8
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 1
+production_total (sec)                  : 11
+maxrss (gb)                             : 0.2
+HLO instr.                              : 258
+Layout instr.                           : 650,405
+Tiling instr.                           : 9,295
+Backend instr.                           : 18,950
+num_operators                           : 62
+num_edges                               : 104
+Layout operator cost                    : 6,153,027
+Layout transpose cost                   : 31,399
+Layout (operator+transpose+IO) cost     : 6,184,426
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 37
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 35
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_token_generation_model_MODULE_75437bbaaed9d2ad5d58_b9573dac_my_naive
+TpbSgCyclesSum                          : 2,475,373,949
+Tensorizer (sec)                        : 32
+Layout (sec)                            : 9
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 36
+maxrss (gb)                             : 0.3
+HLO instr.                              : 1,268
+Layout instr.                           : 1,823,625
+Tiling instr.                           : 22,055
+Backend instr.                           : 43,359
+num_operators                           : 322
+num_edges                               : 544
+Layout operator cost                    : 33,622,577
+Layout transpose cost                   : 181,249
+Layout (operator+transpose+IO) cost     : 33,803,826
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 197
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 13
+num_pf_transposes                       : 185
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_token_generation_model_MODULE_75c7e4cedb7fa45aac3a_a5fd4e20_my_naive
+TpbSgCyclesSum                          : 1,821,375,201
+Tensorizer (sec)                        : 8
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 10
+maxrss (gb)                             : 0.2
+HLO instr.                              : 228
+Layout instr.                           : 638,824
+Tiling instr.                           : 9,289
+Backend instr.                           : 36,007
+num_operators                           : 55
+num_edges                               : 89
+Layout operator cost                    : 6,817,675
+Layout transpose cost                   : 30,584
+Layout (operator+transpose+IO) cost     : 6,848,259
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 32
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 30
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_mvp_bs_1_seq_2048_token_generation_model_MODULE_df607a0e3e9e2b79bba0_e497063b_my_naive
+TpbSgCyclesSum                          : 4,785,761,111
+Tensorizer (sec)                        : 29
+Layout (sec)                            : 8
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 34
+maxrss (gb)                             : 0.3
+HLO instr.                              : 1,104
+Layout instr.                           : 1,811,819
+Tiling instr.                           : 22,258
+Backend instr.                           : 83,195
+num_operators                           : 317
+num_edges                               : 535
+Layout operator cost                    : 35,456,148
+Layout transpose cost                   : 182,866
+Layout (operator+transpose+IO) cost     : 35,639,014
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 194
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 13
+num_pf_transposes                       : 182
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_paligemma_3b_mix_224_bs_1_seq_2048_context_encoding_model_MODULE_90bb44b8e0210c28fd70_67de28bc_my_naive
+TpbSgCyclesSum                          : 10,808,912,419
+Tensorizer (sec)                        : 5
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 20
+maxrss (gb)                             : 0.8
+HLO instr.                              : 39
+Layout instr.                           : 5,433,191
+Tiling instr.                           : 70,597
+Backend instr.                           : 153,876
+num_operators                           : 46
+num_edges                               : 34
+Layout operator cost                    : 9,520,411
+Layout transpose cost                   : 6,613,332
+Layout (operator+transpose+IO) cost     : 16,133,743
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 22
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 6
+num_pf_transposes                       : 15
+num_nonlocal_tensors                    : 0
+subgraphs                               : 12
+
+test_plbart_base_bs_1_seq_128_MODULE_d187234b27dd2803f697_d4c90616_my_naive
+TpbSgCyclesSum                          : 1,068,684,229
+Tensorizer (sec)                        : 17
+Layout (sec)                            : 3
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 20
+maxrss (gb)                             : 0.2
+HLO instr.                              : 650
+Layout instr.                           : 726,357
+Tiling instr.                           : 9,903
+Backend instr.                           : 19,674
+num_operators                           : 162
+num_edges                               : 272
+Layout operator cost                    : 9,956,178
+Layout transpose cost                   : 69,744
+Layout (operator+transpose+IO) cost     : 10,025,922
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 98
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 7
+num_pf_transposes                       : 92
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_plbart_base_bs_1_seq_128_MODULE_d4199b6be85baaea92f8_10f349c5_my_naive
+TpbSgCyclesSum                          : 1,060,603,741
+Tensorizer (sec)                        : 17
+Layout (sec)                            : 3
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 20
+maxrss (gb)                             : 0.2
+HLO instr.                              : 650
+Layout instr.                           : 726,357
+Tiling instr.                           : 9,903
+Backend instr.                           : 19,674
+num_operators                           : 162
+num_edges                               : 272
+Layout operator cost                    : 9,956,178
+Layout transpose cost                   : 69,744
+Layout (operator+transpose+IO) cost     : 10,025,922
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 98
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 7
+num_pf_transposes                       : 92
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_plbart_base_bs_1_seq_128_MODULE_dbab4bbda239ab75fd20_c1db6888_my_naive
+TpbSgCyclesSum                          : 1,071,619,146
+Tensorizer (sec)                        : 17
+Layout (sec)                            : 3
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 20
+maxrss (gb)                             : 0.2
+HLO instr.                              : 650
+Layout instr.                           : 726,357
+Tiling instr.                           : 9,903
+Backend instr.                           : 19,674
+num_operators                           : 162
+num_edges                               : 272
+Layout operator cost                    : 9,956,178
+Layout transpose cost                   : 69,744
+Layout (operator+transpose+IO) cost     : 10,025,922
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 98
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 7
+num_pf_transposes                       : 92
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_plbart_base_bs_1_seq_2048_token_generation_model_MODULE_5d78beba9567f362dd38_4ef8e11c_my_naive
+TpbSgCyclesSum                          : 1,044,855,612
+Tensorizer (sec)                        : 17
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 19
+maxrss (gb)                             : 0.2
+HLO instr.                              : 610
+Layout instr.                           : 725,895
+Tiling instr.                           : 9,875
+Backend instr.                           : 19,786
+num_operators                           : 163
+num_edges                               : 273
+Layout operator cost                    : 9,909,038
+Layout transpose cost                   : 69,713
+Layout (operator+transpose+IO) cost     : 9,978,751
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 99
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 7
+num_pf_transposes                       : 93
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_resnet50_bs_16_MODULE_10731567180434628654_plus_080aa230_my_naive
+TpbSgCyclesSum                          : 381,207,277,529
+Tensorizer (sec)                        : 392
+Layout (sec)                            : 194
+BackendDriver (sec)                      : 758
+production_total (sec)                  : 1151
+maxrss (gb)                             : 22.0
+HLO instr.                              : 4,624
+Layout instr.                           : 95,927,973
+Tiling instr.                           : 240,417
+Backend instr.                           : 1,050,844
+num_operators                           : 1679
+num_edges                               : 1558
+Layout operator cost                    : 76,781,845
+Layout transpose cost                   : 10,291,635
+Layout (operator+transpose+IO) cost     : 87,073,480
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 930
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 186
+num_pf_transposes                       : 53
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_resnet50_bs_16_MODULE_18211355964132859055_plus_080aa230_my_naive
+TpbSgCyclesSum                          : 91,909,934,961
+Tensorizer (sec)                        : 55
+Layout (sec)                            : 12
+BackendDriver (sec)                      : 363
+production_total (sec)                  : 418
+maxrss (gb)                             : 18.0
+HLO instr.                              : 1,717
+Layout instr.                           : 34,380,542
+Tiling instr.                           : 117,902
+Backend instr.                           : 318,126
+num_operators                           : 281
+num_edges                               : 461
+Layout operator cost                    : 22,317,274
+Layout transpose cost                   : 1,892,463
+Layout (operator+transpose+IO) cost     : 24,209,737
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 149
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 55
+num_pf_transposes                       : 11
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_resnet50_bs_16_MODULE_4034258629611396623_plus_080aa230_my_naive
+TpbSgCyclesSum                          : 382,622,639,150
+Tensorizer (sec)                        : 410
+Layout (sec)                            : 202
+BackendDriver (sec)                      : 767
+production_total (sec)                  : 1179
+maxrss (gb)                             : 22.2
+HLO instr.                              : 5,136
+Layout instr.                           : 96,533,033
+Tiling instr.                           : 241,460
+Backend instr.                           : 1,051,488
+num_operators                           : 1679
+num_edges                               : 1558
+Layout operator cost                    : 78,587,773
+Layout transpose cost                   : 10,204,559
+Layout (operator+transpose+IO) cost     : 88,792,332
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 1008
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 232
+num_pf_transposes                       : 53
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_sshleifer_distilbart_cnn_6_6_type_auto_bs_4_seq_128_MODULE_17627513587828894802_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : 2,236,492,811
+Tensorizer (sec)                        : 14
+Layout (sec)                            : 2
+BackendDriver (sec)                      : 3
+production_total (sec)                  : 17
+maxrss (gb)                             : 0.2
+HLO instr.                              : 572
+Layout instr.                           : 3,952,641
+Tiling instr.                           : 14,879
+Backend instr.                           : 32,656
+num_operators                           : 93
+num_edges                               : 174
+Layout operator cost                    : 5,027,509
+Layout transpose cost                   : 1,889,331
+Layout (operator+transpose+IO) cost     : 6,916,840
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 144
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 99
+num_pf_transposes                       : 44
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_unet_B4_MODULE_3208590055032863725_plus_080aa230_my_naive
+TpbSgCyclesSum                          : not found
+Tensorizer (sec)                        : 17
+Layout (sec)                            : not found
+production_total (sec)                  : 0
+maxrss (gb)                             : not found
+HLO instr.                              : 359
+Layout instr.                           : 0
+Tiling instr.                           : 0
+Backend instr.                           : not found
+num_operators                           : 0
+num_edges                               : 0
+Layout operator cost                    : 0
+Layout transpose cost                   : 0
+Layout (operator+transpose+IO) cost     : 0
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 0
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 34
+num_pf_transposes                       : 19
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+Errors found:
+  2026-03-10T11:21:28Z USER 26983 [neuronxcc.driver.CommandDriver]: [ERROR] [NCC_EXSP001] Size of HBM memory required for the model exceeds HBM limit of sunda. Needed more than 30,192,205,056 (28.12GB) vs. available bytes 17,179,869,184 (16.00GB). This may be due to compiler allocating high scratch pad memory for this model. - Check the target architecture flag to ensure you are compiling for correct target, or consider using smaller batches or applying model/tensor parallelism.
+
+test_unet_B4_MODULE_3949044161141089953_plus_080aa230_my_naive
+TpbSgCyclesSum                          : not found
+Tensorizer (sec)                        : 214
+Layout (sec)                            : 43
+production_total (sec)                  : 216
+maxrss (gb)                             : 4.3
+HLO instr.                              : 2,685
+Layout instr.                           : 276,845,702
+Tiling instr.                           : 15,125,550
+Backend instr.                           : not found
+num_operators                           : 652
+num_edges                               : 708
+Layout operator cost                    : 74,508,882
+Layout transpose cost                   : 44,181,192
+Layout (operator+transpose+IO) cost     : 118,690,074
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 443
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 102
+num_pf_transposes                       : 102
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+Errors found:
+  2026-03-10T07:13:16Z USER 24171 [neuronxcc.driver.CommandDriver]: Non-signal exit. Backend exited with code 1 and stderr: [ERROR] [NCC_EBVF030] Instructions generated by compiler 29055161 exceeds the typical limit of 5000000. Input computation graph is too big due to large operators - Consider using smaller batches or sequence length, or applying tensor parellelism. For further troubleshooting visit https://awsdocs-neuron.readthedocs-hosted.com/en/latest/libraries/nxd-training/app_notes/nxd-training-tp-appnote.html
+
+test_unet_B4_MODULE_6097415191351560119_plus_080aa230_my_naive
+TpbSgCyclesSum                          : not found
+Tensorizer (sec)                        : 16
+Layout (sec)                            : not found
+production_total (sec)                  : 0
+maxrss (gb)                             : not found
+HLO instr.                              : 345
+Layout instr.                           : 0
+Tiling instr.                           : 0
+Backend instr.                           : not found
+num_operators                           : 0
+num_edges                               : 0
+Layout operator cost                    : 0
+Layout transpose cost                   : 0
+Layout (operator+transpose+IO) cost     : 0
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 0
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 34
+num_pf_transposes                       : 18
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+Errors found:
+  2026-03-10T10:12:18Z USER 39017 [neuronxcc.driver.CommandDriver]: [ERROR] [NCC_EXSP001] Size of HBM memory required for the model exceeds HBM limit of sunda. Needed more than 30,192,139,520 (28.12GB) vs. available bytes 17,179,869,184 (16.00GB). This may be due to compiler allocating high scratch pad memory for this model. - Check the target architecture flag to ensure you are compiling for correct target, or consider using smaller batches or applying model/tensor parallelism.
+
+test_unet_B4_MODULE_7534641466398025551_plus_080aa230_my_naive
+TpbSgCyclesSum                          : not found
+Tensorizer (sec)                        : 208
+Layout (sec)                            : 44
+production_total (sec)                  : 210
+maxrss (gb)                             : 4.2
+HLO instr.                              : 2,367
+Layout instr.                           : 275,398,389
+Tiling instr.                           : 15,380,630
+Backend instr.                           : not found
+num_operators                           : 741
+num_edges                               : 861
+Layout operator cost                    : 71,086,362
+Layout transpose cost                   : 38,278,766
+Layout (operator+transpose+IO) cost     : 109,365,128
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 398
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 73
+num_pf_transposes                       : 119
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+Errors found:
+  2026-03-10T10:50:01Z USER 32634 [neuronxcc.driver.CommandDriver]: Non-signal exit. Backend exited with code 1 and stderr: [ERROR] [NCC_EBVF030] Instructions generated by compiler 28654392 exceeds the typical limit of 5000000. Input computation graph is too big due to large operators - Consider using smaller batches or sequence length, or applying tensor parellelism. For further troubleshooting visit https://awsdocs-neuron.readthedocs-hosted.com/en/latest/libraries/nxd-training/app_notes/nxd-training-tp-appnote.html
+
+test_unet_B4_MODULE_8524853651227224637_plus_080aa230_my_naive
+TpbSgCyclesSum                          : not found
+Tensorizer (sec)                        : 49
+Layout (sec)                            : 3
+production_total (sec)                  : 50
+maxrss (gb)                             : 2.1
+HLO instr.                              : 635
+Layout instr.                           : 156,694,297
+Tiling instr.                           : 1,468,552
+Backend instr.                           : not found
+num_operators                           : 128
+num_edges                               : 194
+Layout operator cost                    : 16,917,628
+Layout transpose cost                   : 31,734,279
+Layout (operator+transpose+IO) cost     : 48,651,907
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 75
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 18
+num_pf_transposes                       : 33
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+Errors found:
+  2026-03-10T11:53:01Z USER 11856 [neuronxcc.driver.CommandDriver]: Non-signal exit. Backend exited with code 1 and stderr: [ERROR] [NCC_EBVF030] Instructions generated by compiler 34902341 exceeds the typical limit of 5000000. Input computation graph is too big due to large operators - Consider using smaller batches or sequence length, or applying tensor parellelism. For further troubleshooting visit https://awsdocs-neuron.readthedocs-hosted.com/en/latest/libraries/nxd-training/app_notes/nxd-training-tp-appnote.html
+
+test_vaultgemma_1b_bs_1_seq_2048_context_encoding_model_MODULE_19838a617aac9977ced3_9c789c41_my_d2d_naive
+TpbSgCyclesSum                          : 21,764,567,139
+Tensorizer (sec)                        : 21
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 23
+production_total (sec)                  : 46
+maxrss (gb)                             : 2.1
+HLO instr.                              : 87
+Layout instr.                           : 3,591,216
+Tiling instr.                           : 42,908
+Backend instr.                           : 151,188
+num_operators                           : 46
+num_edges                               : 60
+Layout operator cost                    : 4,084,517
+Layout transpose cost                   : 19,342,482
+Layout (operator+transpose+IO) cost     : 23,426,999
+Layout DMA cost                         : 3,487,251
+Layout D2D cost                         : 19,200,062
+num_layout_transposes                   : 33
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 29
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_vaultgemma_1b_bs_1_seq_2048_context_encoding_model_MODULE_19838a617aac9977ced3_9c789c41_my_naive
+TpbSgCyclesSum                          : 21,770,052,700
+Tensorizer (sec)                        : 34
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 25
+production_total (sec)                  : 60
+maxrss (gb)                             : 2.1
+HLO instr.                              : 87
+Layout instr.                           : 3,591,216
+Tiling instr.                           : 42,908
+Backend instr.                           : 151,188
+num_operators                           : 46
+num_edges                               : 60
+Layout operator cost                    : 4,084,517
+Layout transpose cost                   : 142,420
+Layout (operator+transpose+IO) cost     : 4,226,937
+Layout DMA cost                         : 3,487,251
+Layout D2D cost                         : 0
+num_layout_transposes                   : 32
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 29
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_vaultgemma_1b_bs_1_seq_2048_context_encoding_model_MODULE_2265e19576946f2e5a74_4bb2c962_my_naive
+TpbSgCyclesSum                          : 16,010,290,411
+Tensorizer (sec)                        : 48
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 24
+production_total (sec)                  : 73
+maxrss (gb)                             : 2.1
+HLO instr.                              : 120
+Layout instr.                           : 3,611,177
+Tiling instr.                           : 43,432
+Backend instr.                           : 151,177
+num_operators                           : 65
+num_edges                               : 84
+Layout operator cost                    : 4,056,454
+Layout transpose cost                   : 145,312
+Layout (operator+transpose+IO) cost     : 4,201,766
+Layout DMA cost                         : 3,487,251
+Layout D2D cost                         : 0
+num_layout_transposes                   : 38
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 35
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_vaultgemma_1b_bs_1_seq_2048_context_encoding_model_MODULE_498bccf6206b0289f9aa_141a1a40_my_naive
+TpbSgCyclesSum                          : 21,627,508,853
+Tensorizer (sec)                        : 47
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 24
+production_total (sec)                  : 73
+maxrss (gb)                             : 2.1
+HLO instr.                              : 115
+Layout instr.                           : 3,627,138
+Tiling instr.                           : 43,009
+Backend instr.                           : 151,104
+num_operators                           : 62
+num_edges                               : 81
+Layout operator cost                    : 4,090,001
+Layout transpose cost                   : 142,420
+Layout (operator+transpose+IO) cost     : 4,232,421
+Layout DMA cost                         : 3,487,251
+Layout D2D cost                         : 0
+num_layout_transposes                   : 32
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 29
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_vaultgemma_1b_bs_1_seq_2048_context_encoding_model_MODULE_5aada30e6488b408f4ef_534ef05e_my_naive
+TpbSgCyclesSum                          : 21,751,642,504
+Tensorizer (sec)                        : 44
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 25
+production_total (sec)                  : 69
+maxrss (gb)                             : 2.1
+HLO instr.                              : 87
+Layout instr.                           : 3,591,216
+Tiling instr.                           : 42,908
+Backend instr.                           : 151,188
+num_operators                           : 46
+num_edges                               : 60
+Layout operator cost                    : 4,084,517
+Layout transpose cost                   : 142,420
+Layout (operator+transpose+IO) cost     : 4,226,937
+Layout DMA cost                         : 3,487,251
+Layout D2D cost                         : 0
+num_layout_transposes                   : 32
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 29
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_vaultgemma_1b_bs_1_seq_2048_context_encoding_model_MODULE_6b916a491dd7bff62c28_87909808_my_naive
+TpbSgCyclesSum                          : 21,621,145,459
+Tensorizer (sec)                        : 47
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 25
+production_total (sec)                  : 72
+maxrss (gb)                             : 2.1
+HLO instr.                              : 115
+Layout instr.                           : 3,627,138
+Tiling instr.                           : 43,009
+Backend instr.                           : 151,104
+num_operators                           : 62
+num_edges                               : 81
+Layout operator cost                    : 4,090,001
+Layout transpose cost                   : 142,420
+Layout (operator+transpose+IO) cost     : 4,232,421
+Layout DMA cost                         : 3,487,251
+Layout D2D cost                         : 0
+num_layout_transposes                   : 32
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 29
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_vaultgemma_1b_bs_1_seq_2048_context_encoding_model_MODULE_88aac507fdd0dbff0f8d_11f9fc15_my_naive
+TpbSgCyclesSum                          : 21,640,289,920
+Tensorizer (sec)                        : 46
+Layout (sec)                            : 1
+BackendDriver (sec)                      : 25
+production_total (sec)                  : 72
+maxrss (gb)                             : 2.1
+HLO instr.                              : 115
+Layout instr.                           : 3,627,138
+Tiling instr.                           : 43,009
+Backend instr.                           : 151,104
+num_operators                           : 62
+num_edges                               : 81
+Layout operator cost                    : 4,090,001
+Layout transpose cost                   : 142,420
+Layout (operator+transpose+IO) cost     : 4,232,421
+Layout DMA cost                         : 3,487,251
+Layout D2D cost                         : 0
+num_layout_transposes                   : 32
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 29
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_vaultgemma_1b_bs_1_seq_2048_context_encoding_model_MODULE_fe888694753acc395dc8_04b21406_my_naive
+TpbSgCyclesSum                          : 21,751,376,082
+Tensorizer (sec)                        : 43
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 23
+production_total (sec)                  : 68
+maxrss (gb)                             : 2.1
+HLO instr.                              : 87
+Layout instr.                           : 3,591,216
+Tiling instr.                           : 42,908
+Backend instr.                           : 151,188
+num_operators                           : 46
+num_edges                               : 60
+Layout operator cost                    : 4,084,517
+Layout transpose cost                   : 142,420
+Layout (operator+transpose+IO) cost     : 4,226,937
+Layout DMA cost                         : 3,487,251
+Layout D2D cost                         : 0
+num_layout_transposes                   : 32
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 3
+num_pf_transposes                       : 29
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_vaultgemma_1b_bs_1_seq_2048_token_generation_model_MODULE_143e880fdd205c2544d1_55d43da7_my_naive
+TpbSgCyclesSum                          : 10,182,352,185
+Tensorizer (sec)                        : 631
+Layout (sec)                            : 50
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 646
+maxrss (gb)                             : 0.8
+HLO instr.                              : 3,043
+Layout instr.                           : 8,574,477
+Tiling instr.                           : 72,589
+Backend instr.                           : 148,789
+num_operators                           : 812
+num_edges                               : 1302
+Layout operator cost                    : 78,180,940
+Layout transpose cost                   : 455,494
+Layout (operator+transpose+IO) cost     : 78,636,434
+Layout DMA cost                         : 10,219,513
+Layout D2D cost                         : 0
+num_layout_transposes                   : 419
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 26
+num_pf_transposes                       : 392
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_vaultgemma_1b_bs_1_seq_2048_token_generation_model_MODULE_228c8dffd297539e4b0c_bb469c7d_my_naive
+TpbSgCyclesSum                          : 10,079,736,500
+Tensorizer (sec)                        : 674
+Layout (sec)                            : 55
+BackendDriver (sec)                      : 15
+production_total (sec)                  : 690
+maxrss (gb)                             : 0.8
+HLO instr.                              : 3,794
+Layout instr.                           : 8,577,278
+Tiling instr.                           : 72,696
+Backend instr.                           : 150,018
+num_operators                           : 866
+num_edges                               : 1409
+Layout operator cost                    : 78,229,523
+Layout transpose cost                   : 455,494
+Layout (operator+transpose+IO) cost     : 78,685,017
+Layout DMA cost                         : 10,219,513
+Layout D2D cost                         : 0
+num_layout_transposes                   : 419
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 26
+num_pf_transposes                       : 392
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_vaultgemma_1b_bs_1_seq_2048_token_generation_model_MODULE_23826d9b87a458bb6570_843e2c94_my_naive
+TpbSgCyclesSum                          : 10,173,571,717
+Tensorizer (sec)                        : 666
+Layout (sec)                            : 55
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 681
+maxrss (gb)                             : 0.8
+HLO instr.                              : 3,629
+Layout instr.                           : 8,577,657
+Tiling instr.                           : 72,324
+Backend instr.                           : 148,792
+num_operators                           : 865
+num_edges                               : 1408
+Layout operator cost                    : 78,251,324
+Layout transpose cost                   : 455,494
+Layout (operator+transpose+IO) cost     : 78,706,818
+Layout DMA cost                         : 10,219,513
+Layout D2D cost                         : 0
+num_layout_transposes                   : 419
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 26
+num_pf_transposes                       : 392
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_vaultgemma_1b_bs_1_seq_2048_token_generation_model_MODULE_2e1d8c3c44d4b82a015b_a67616cc_my_naive
+TpbSgCyclesSum                          : 10,183,678,576
+Tensorizer (sec)                        : 628
+Layout (sec)                            : 50
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 643
+maxrss (gb)                             : 0.8
+HLO instr.                              : 3,043
+Layout instr.                           : 8,574,477
+Tiling instr.                           : 72,589
+Backend instr.                           : 148,789
+num_operators                           : 812
+num_edges                               : 1302
+Layout operator cost                    : 78,180,940
+Layout transpose cost                   : 455,494
+Layout (operator+transpose+IO) cost     : 78,636,434
+Layout DMA cost                         : 10,219,513
+Layout D2D cost                         : 0
+num_layout_transposes                   : 419
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 26
+num_pf_transposes                       : 392
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_vaultgemma_1b_bs_1_seq_2048_token_generation_model_MODULE_331736842dd7191a97b0_5b4b46c7_my_naive
+TpbSgCyclesSum                          : 10,168,925,419
+Tensorizer (sec)                        : 663
+Layout (sec)                            : 49
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 679
+maxrss (gb)                             : 0.8
+HLO instr.                              : 3,043
+Layout instr.                           : 8,574,477
+Tiling instr.                           : 72,589
+Backend instr.                           : 148,789
+num_operators                           : 812
+num_edges                               : 1302
+Layout operator cost                    : 78,180,940
+Layout transpose cost                   : 455,494
+Layout (operator+transpose+IO) cost     : 78,636,434
+Layout DMA cost                         : 10,219,513
+Layout D2D cost                         : 0
+num_layout_transposes                   : 419
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 26
+num_pf_transposes                       : 392
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_vaultgemma_1b_bs_1_seq_2048_token_generation_model_MODULE_5550761f905c3584fe8e_92ddc30c_my_naive
+TpbSgCyclesSum                          : 10,178,363,726
+Tensorizer (sec)                        : 671
+Layout (sec)                            : 79
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 687
+maxrss (gb)                             : 0.8
+HLO instr.                              : 3,043
+Layout instr.                           : 8,574,477
+Tiling instr.                           : 72,589
+Backend instr.                           : 148,789
+num_operators                           : 812
+num_edges                               : 1302
+Layout operator cost                    : 78,180,940
+Layout transpose cost                   : 455,494
+Layout (operator+transpose+IO) cost     : 78,636,434
+Layout DMA cost                         : 10,219,513
+Layout D2D cost                         : 0
+num_layout_transposes                   : 419
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 26
+num_pf_transposes                       : 392
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_vaultgemma_1b_bs_1_seq_2048_token_generation_model_MODULE_7af4ac6deb78db488944_22c7aa50_my_naive
+TpbSgCyclesSum                          : 10,178,867,283
+Tensorizer (sec)                        : 622
+Layout (sec)                            : 49
+BackendDriver (sec)                      : 14
+production_total (sec)                  : 637
+maxrss (gb)                             : 0.8
+HLO instr.                              : 3,043
+Layout instr.                           : 8,574,477
+Tiling instr.                           : 72,589
+Backend instr.                           : 148,789
+num_operators                           : 812
+num_edges                               : 1302
+Layout operator cost                    : 78,180,940
+Layout transpose cost                   : 455,494
+Layout (operator+transpose+IO) cost     : 78,636,434
+Layout DMA cost                         : 10,219,513
+Layout D2D cost                         : 0
+num_layout_transposes                   : 419
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 26
+num_pf_transposes                       : 392
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_vision_perceiver_conv_bs_4_MODULE_16271670994419107146_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : 230,766,900,927
+Tensorizer (sec)                        : 385
+Layout (sec)                            : 185
+BackendDriver (sec)                      : 138
+production_total (sec)                  : 527
+maxrss (gb)                             : 7.1
+HLO instr.                              : 6,102
+Layout instr.                           : 65,095,384
+Tiling instr.                           : 386,841
+Backend instr.                           : 984,954
+num_operators                           : 1664
+num_edges                               : 1567
+Layout operator cost                    : 93,793,866
+Layout transpose cost                   : 18,524,190
+Layout (operator+transpose+IO) cost     : 112,318,056
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 1605
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 55
+num_pf_transposes                       : 741
+num_nonlocal_tensors                    : 0
+subgraphs                               : 5
+
+test_vision_perceiver_learned_my_naive
+TpbSgCyclesSum                          : 14,177,633,387
+Tensorizer (sec)                        : 166
+Layout (sec)                            : 78
+BackendDriver (sec)                      : 27
+production_total (sec)                  : 194
+maxrss (gb)                             : 1.3
+HLO instr.                              : 3,205
+Layout instr.                           : 32,866,348
+Tiling instr.                           : 93,384
+Backend instr.                           : 241,577
+num_operators                           : 971
+num_edges                               : 1675
+Layout operator cost                    : 24,043,195
+Layout transpose cost                   : 9,994,929
+Layout (operator+transpose+IO) cost     : 34,038,124
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 1164
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 61
+num_pf_transposes                       : 355
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+test_whisper_large_v3_turbo_decoder_bs_1_seq_100_my_naive
+TpbSgCyclesSum                          : 6,053,403,315
+Tensorizer (sec)                        : 5
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 2
+production_total (sec)                  : 7
+maxrss (gb)                             : 0.2
+HLO instr.                              : 95
+Layout instr.                           : 1,391,409
+Tiling instr.                           : 13,362
+Backend instr.                           : 49,256
+num_operators                           : 54
+num_edges                               : 87
+Layout operator cost                    : 2,814,759
+Layout transpose cost                   : 1,521,735
+Layout (operator+transpose+IO) cost     : 4,336,494
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 85
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 56
+num_pf_transposes                       : 24
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_whisper_large_v3_turbo_encoder_bs_1_seq_1500_my_naive
+TpbSgCyclesSum                          : 199,046,763,080
+Tensorizer (sec)                        : 6
+Layout (sec)                            : 0
+BackendDriver (sec)                      : 6
+production_total (sec)                  : 13
+maxrss (gb)                             : 0.6
+HLO instr.                              : 93
+Layout instr.                           : 5,931,785
+Tiling instr.                           : 27,270
+Backend instr.                           : 118,609
+num_operators                           : 33
+num_edges                               : 56
+Layout operator cost                    : 12,213,615
+Layout transpose cost                   : 1,807,056
+Layout (operator+transpose+IO) cost     : 14,020,671
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 58
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 19
+num_pf_transposes                       : 14
+num_nonlocal_tensors                    : 0
+subgraphs                               : 3
+
+test_xlm_roberta_base_type_auto_bs_2_seq_256_MODULE_3714715883677202631_plus_e30acd3a_my_naive
+TpbSgCyclesSum                          : 2,969,047,207
+Tensorizer (sec)                        : 31
+Layout (sec)                            : 6
+BackendDriver (sec)                      : 4
+production_total (sec)                  : 36
+maxrss (gb)                             : 0.3
+HLO instr.                              : 1,098
+Layout instr.                           : 5,961,551
+Tiling instr.                           : 19,463
+Backend instr.                           : 42,336
+num_operators                           : 178
+num_edges                               : 338
+Layout operator cost                    : 7,627,107
+Layout transpose cost                   : 2,448,825
+Layout (operator+transpose+IO) cost     : 10,075,932
+Layout DMA cost                         : 0
+Layout D2D cost                         : 0
+num_layout_transposes                   : 276
+estimated_non_local_tensors             : 0
+num_io_transposes                       : 195
+num_pf_transposes                       : 80
+num_nonlocal_tensors                    : 0
+subgraphs                               : 1
+
+Wrote 124 rows to e2e_metrics_naive.csv
