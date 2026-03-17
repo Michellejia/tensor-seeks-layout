@@ -1,0 +1,19 @@
+# objective
+operator_cost ; 17,605
+transpose_cost;      0
+total_cost    ; 17,605
+runtime_s     ; 0.004
+
+# operator_costs
+dag_0;[i0_1,i2];17606
+dag_0;[i0_0,i2];47483
+dag_0;[i0_1,i0_0,i2];17606
+
+# tensor_layouts
+
+# tensor_transpose_costs
+
+# edges
+
+# operator_selection
+dag_0;[i0_1,i0_0,i2]

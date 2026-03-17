@@ -1,0 +1,192 @@
+{
+  "name": "linear_chain",
+  "description": "Linear chain with 5 nodes",
+  "nodes": [
+    {
+      "id": "node_0",
+      "operations": [
+        "matmul",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_1",
+      "operations": [
+        "matmul",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_2",
+      "operations": [
+        "matmul",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_3",
+      "operations": [
+        "matmul",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_4",
+      "operations": [
+        "matmul",
+        "add"
+      ],
+      "type": "compute"
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_0",
+      "target": "node_1",
+      "tensor_shape": [
+        128,
+        128
+      ]
+    },
+    {
+      "source": "node_1",
+      "target": "node_2",
+      "tensor_shape": [
+        128,
+        128
+      ]
+    },
+    {
+      "source": "node_2",
+      "target": "node_3",
+      "tensor_shape": [
+        128,
+        128
+      ]
+    },
+    {
+      "source": "node_3",
+      "target": "node_4",
+      "tensor_shape": [
+        128,
+        128
+      ]
+    }
+  ],
+  "layout_options": {
+    "node_0": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ],
+    "node_1": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ],
+    "node_2": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ],
+    "node_3": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ],
+    "node_4": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ]
+  }
+}

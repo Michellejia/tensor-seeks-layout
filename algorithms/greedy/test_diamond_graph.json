@@ -1,0 +1,198 @@
+{
+  "name": "diamond_graph",
+  "description": "Fork-join pattern with 2 parallel branches",
+  "nodes": [
+    {
+      "id": "input",
+      "operations": [
+        "load"
+      ],
+      "type": "input"
+    },
+    {
+      "id": "branch_a",
+      "operations": [
+        "matmul",
+        "relu"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "branch_b",
+      "operations": [
+        "conv2d",
+        "relu"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "merge",
+      "operations": [
+        "add",
+        "softmax"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "output",
+      "operations": [
+        "store"
+      ],
+      "type": "output"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input",
+      "target": "branch_a",
+      "tensor_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "source": "input",
+      "target": "branch_b",
+      "tensor_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "source": "branch_a",
+      "target": "merge",
+      "tensor_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "source": "branch_b",
+      "target": "merge",
+      "tensor_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "source": "merge",
+      "target": "output",
+      "tensor_shape": [
+        64,
+        64
+      ]
+    }
+  ],
+  "layout_options": {
+    "input": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ],
+    "branch_a": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ],
+    "branch_b": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ],
+    "merge": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ],
+    "output": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      }
+    ]
+  }
+}

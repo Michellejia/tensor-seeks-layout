@@ -12,11 +12,11 @@ The cost model is a critical component that estimates the execution cost of oper
 
 ### 1. Operator Cost Estimation
 
-**Method:** `estimate_operator_cost(operator, layout_config)`
+**Method:** `operator_cost(op, layout)`
 
 - **Input:**
-  - `operator`: The operation to be executed (e.g., matrix multiplication, convolution, elementwise operation)
-  - `layout_config`: Layout configuration specifying the memory layout for each input/output tensor
+  - `op`: The operation to be executed (e.g., matrix multiplication, convolution, elementwise operation)
+  - `layout`: Layout configuration specifying the memory layout for each input/output tensor
 - **Output:** Estimated execution cost (typically in cycles or time units)
 - **Purpose:** Estimates the cost of executing an operator with a specific layout configuration.
 
@@ -25,11 +25,11 @@ The cost model is a critical component that estimates the execution cost of oper
 ```
 MatMul: C[M,N] = A[M,K] × B[K,N]
 
-layout_config_1 = {A: row-major, B: row-major, C: row-major}
-cost_1 = estimate_operator_cost(matmul, layout_config_1)
+layout_1 = {A: row-major, B: row-major, C: row-major}
+cost_1 = operator_cost(matmul, layout_1)
 
-layout_config_2 = {A: row-major, B: col-major, C: row-major}
-cost_2 = estimate_operator_cost(matmul, layout_config_2)
+layout_2 = {A: row-major, B: col-major, C: row-major}
+cost_2 = operator_cost(matmul, layout_2)
 ```
 
 **Cost Factors:**
@@ -42,12 +42,12 @@ cost_2 = estimate_operator_cost(matmul, layout_config_2)
 
 ### 2. Transpose Cost Estimation
 
-**Method:** `estimate_transpose_cost(tensor, source_layout, target_layout)`
+**Method:** `transpose_cost(tensor, src_layout, dst_layout)`
 
 - **Input:**
   - `tensor`: The tensor being transposed
-  - `source_layout`: Current memory layout
-  - `target_layout`: Desired memory layout
+  - `src_layout`: Current memory layout
+  - `dst_layout`: Desired memory layout
 - **Output:** Estimated cost of layout conversion (typically in cycles or time units)
 - **Purpose:** Estimates the cost of converting a tensor from one layout to another.
 
@@ -55,7 +55,7 @@ cost_2 = estimate_operator_cost(matmul, layout_config_2)
 
 ```
 tensor = A[M,K]
-cost = estimate_transpose_cost(A, row-major, col-major)
+cost = transpose_cost(A, row-major, col-major)
 ```
 
 **Cost Factors:**
@@ -69,6 +69,24 @@ cost = estimate_transpose_cost(A, row-major, col-major)
 
 - **Zero-cost transposes:** Layout reinterpretations that don't require data movement
 - **Fused transposes:** Transposes that can be fused with adjacent operations
+
+### 3. Layout Feasibility Check
+
+**Method:** `is_feasible(op, layout)`
+
+- **Input:**
+  - `op`: The operation to check
+  - `layout`: Candidate layout configuration
+- **Output:** Boolean indicating whether the operator supports the given layout
+- **Purpose:** Filters out invalid layout configurations before cost evaluation. Infeasible layouts are excluded from the search space or assigned infinite cost.
+
+**Example:**
+
+```
+# Some operators may not support certain layouts
+is_feasible(conv2d, {input: NHWC, filter: OIHW})  # True
+is_feasible(conv2d, {input: NCHW, filter: OIHW})  # False on some hardware
+```
 
 ## Hardware-Specific Cost Models
 
@@ -104,10 +122,10 @@ For each bag in tree decomposition:
     For each layout assignment λ:
         cost = 0
         For each operator in bag:
-            cost += estimate_operator_cost(operator, λ)
+            cost += operator_cost(operator, λ)
         For each child bag:
             For each compatible assignment λ':
-                cost += estimate_transpose_cost(tensors, λ, λ')
+                cost += transpose_cost(tensors, λ, λ')
         DP[bag, λ] = min(cost, DP[bag, λ])
 ```
 
@@ -117,11 +135,11 @@ The MaxSAT encoding uses cost model estimates as weights for soft clauses:
 
 ```
 For each operator and configuration:
-    weight = estimate_operator_cost(operator, config)
+    weight = operator_cost(operator, config)
     Add soft clause with weight
 
 For each tensor and layout pair:
-    weight = estimate_transpose_cost(tensor, layout1, layout2)
+    weight = transpose_cost(tensor, layout1, layout2)
     Add soft clause with weight
 ```
 
@@ -133,9 +151,9 @@ The greedy algorithm queries the cost model to evaluate each candidate solution:
 For each candidate solution:
     total_cost = 0
     For each operator:
-        total_cost += estimate_operator_cost(operator, solution.layout)
+        total_cost += operator_cost(operator, solution.layout)
     For each transpose:
-        total_cost += estimate_transpose_cost(tensor, src_layout, dst_layout)
+        total_cost += transpose_cost(tensor, src_layout, dst_layout)
     If total_cost < best_cost:
         best_solution = solution
 ```
@@ -162,18 +180,18 @@ For each candidate solution:
 # Layout selection algorithm queries cost model
 
 # Step 1: Estimate operator costs
-matmul_cost_row_row = estimate_operator_cost(
+matmul_cost_row_row = operator_cost(
     operator=matmul,
     layout_config={A: row-major, B: row-major}
 )
 
-matmul_cost_row_col = estimate_operator_cost(
+matmul_cost_row_col = operator_cost(
     operator=matmul,
     layout_config={A: row-major, B: col-major}
 )
 
 # Step 2: Estimate transpose costs
-transpose_cost = estimate_transpose_cost(
+transpose_cost = transpose_cost(
     tensor=B,
     source_layout=row-major,
     target_layout=col-major

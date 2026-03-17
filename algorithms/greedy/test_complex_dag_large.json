@@ -1,0 +1,787 @@
+{
+  "name": "complex_dag",
+  "description": "Random DAG with 15 nodes and ~29 edges",
+  "nodes": [
+    {
+      "id": "node_0",
+      "operations": [
+        "layer_norm",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_1",
+      "operations": [
+        "matmul",
+        "conv2d"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_2",
+      "operations": [
+        "matmul",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_3",
+      "operations": [
+        "relu",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_4",
+      "operations": [
+        "matmul",
+        "conv2d"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_5",
+      "operations": [
+        "softmax",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_6",
+      "operations": [
+        "conv2d",
+        "relu"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_7",
+      "operations": [
+        "relu",
+        "layer_norm"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_8",
+      "operations": [
+        "conv2d",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_9",
+      "operations": [
+        "conv2d",
+        "layer_norm"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_10",
+      "operations": [
+        "layer_norm",
+        "softmax"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_11",
+      "operations": [
+        "softmax",
+        "add"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_12",
+      "operations": [
+        "layer_norm",
+        "softmax"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_13",
+      "operations": [
+        "relu",
+        "softmax"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "node_14",
+      "operations": [
+        "relu",
+        "add"
+      ],
+      "type": "compute"
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_0",
+      "target": "node_1",
+      "tensor_shape": [
+        32,
+        128
+      ]
+    },
+    {
+      "source": "node_0",
+      "target": "node_5",
+      "tensor_shape": [
+        32,
+        128
+      ]
+    },
+    {
+      "source": "node_0",
+      "target": "node_7",
+      "tensor_shape": [
+        64,
+        128
+      ]
+    },
+    {
+      "source": "node_0",
+      "target": "node_12",
+      "tensor_shape": [
+        128,
+        32
+      ]
+    },
+    {
+      "source": "node_1",
+      "target": "node_4",
+      "tensor_shape": [
+        64,
+        32
+      ]
+    },
+    {
+      "source": "node_1",
+      "target": "node_10",
+      "tensor_shape": [
+        32,
+        128
+      ]
+    },
+    {
+      "source": "node_1",
+      "target": "node_14",
+      "tensor_shape": [
+        32,
+        128
+      ]
+    },
+    {
+      "source": "node_2",
+      "target": "node_8",
+      "tensor_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "source": "node_2",
+      "target": "node_9",
+      "tensor_shape": [
+        32,
+        128
+      ]
+    },
+    {
+      "source": "node_2",
+      "target": "node_11",
+      "tensor_shape": [
+        64,
+        32
+      ]
+    },
+    {
+      "source": "node_2",
+      "target": "node_14",
+      "tensor_shape": [
+        128,
+        64
+      ]
+    },
+    {
+      "source": "node_3",
+      "target": "node_5",
+      "tensor_shape": [
+        128,
+        128
+      ]
+    },
+    {
+      "source": "node_3",
+      "target": "node_7",
+      "tensor_shape": [
+        128,
+        128
+      ]
+    },
+    {
+      "source": "node_4",
+      "target": "node_5",
+      "tensor_shape": [
+        32,
+        64
+      ]
+    },
+    {
+      "source": "node_4",
+      "target": "node_6",
+      "tensor_shape": [
+        128,
+        32
+      ]
+    },
+    {
+      "source": "node_4",
+      "target": "node_8",
+      "tensor_shape": [
+        128,
+        128
+      ]
+    },
+    {
+      "source": "node_4",
+      "target": "node_9",
+      "tensor_shape": [
+        32,
+        32
+      ]
+    },
+    {
+      "source": "node_4",
+      "target": "node_11",
+      "tensor_shape": [
+        32,
+        64
+      ]
+    },
+    {
+      "source": "node_4",
+      "target": "node_13",
+      "tensor_shape": [
+        32,
+        128
+      ]
+    },
+    {
+      "source": "node_5",
+      "target": "node_10",
+      "tensor_shape": [
+        32,
+        128
+      ]
+    },
+    {
+      "source": "node_6",
+      "target": "node_9",
+      "tensor_shape": [
+        64,
+        128
+      ]
+    },
+    {
+      "source": "node_6",
+      "target": "node_12",
+      "tensor_shape": [
+        32,
+        128
+      ]
+    },
+    {
+      "source": "node_7",
+      "target": "node_9",
+      "tensor_shape": [
+        32,
+        64
+      ]
+    },
+    {
+      "source": "node_7",
+      "target": "node_12",
+      "tensor_shape": [
+        128,
+        128
+      ]
+    },
+    {
+      "source": "node_8",
+      "target": "node_11",
+      "tensor_shape": [
+        64,
+        64
+      ]
+    },
+    {
+      "source": "node_8",
+      "target": "node_12",
+      "tensor_shape": [
+        64,
+        32
+      ]
+    },
+    {
+      "source": "node_8",
+      "target": "node_13",
+      "tensor_shape": [
+        32,
+        64
+      ]
+    },
+    {
+      "source": "node_10",
+      "target": "node_13",
+      "tensor_shape": [
+        64,
+        32
+      ]
+    },
+    {
+      "source": "node_12",
+      "target": "node_13",
+      "tensor_shape": [
+        128,
+        64
+      ]
+    }
+  ],
+  "layout_options": {
+    "node_0": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [],
+        "description": "Layout_3"
+      }
+    ],
+    "node_1": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [],
+        "description": "Layout_3"
+      }
+    ],
+    "node_2": [
+      {
+        "id": 0,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [],
+        "description": "Layout_3"
+      }
+    ],
+    "node_3": [
+      {
+        "id": 0,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "node_4": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "node_5": [
+      {
+        "id": 0,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "node_6": [
+      {
+        "id": 0,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "node_7": [
+      {
+        "id": 0,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "node_8": [
+      {
+        "id": 0,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "node_9": [
+      {
+        "id": 0,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [],
+        "description": "Layout_3"
+      }
+    ],
+    "node_10": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "node_11": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [],
+        "description": "Layout_3"
+      }
+    ],
+    "node_12": [
+      {
+        "id": 0,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "node_13": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "node_14": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ]
+  }
+}

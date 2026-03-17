@@ -1,0 +1,460 @@
+{
+  "name": "transformer_block",
+  "description": "Simplified transformer attention + FFN block",
+  "nodes": [
+    {
+      "id": "input_embedding",
+      "operations": [
+        "embedding_lookup"
+      ],
+      "type": "input"
+    },
+    {
+      "id": "query_proj",
+      "operations": [
+        "matmul"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "key_proj",
+      "operations": [
+        "matmul"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "value_proj",
+      "operations": [
+        "matmul"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "attention_scores",
+      "operations": [
+        "matmul",
+        "softmax"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "attention_output",
+      "operations": [
+        "matmul"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "ffn_1",
+      "operations": [
+        "matmul",
+        "gelu"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "ffn_2",
+      "operations": [
+        "matmul"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "layer_norm",
+      "operations": [
+        "layer_norm"
+      ],
+      "type": "compute"
+    },
+    {
+      "id": "output",
+      "operations": [
+        "store"
+      ],
+      "type": "output"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_embedding",
+      "target": "query_proj",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    },
+    {
+      "source": "input_embedding",
+      "target": "key_proj",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    },
+    {
+      "source": "input_embedding",
+      "target": "value_proj",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    },
+    {
+      "source": "query_proj",
+      "target": "attention_scores",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    },
+    {
+      "source": "key_proj",
+      "target": "attention_scores",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    },
+    {
+      "source": "attention_scores",
+      "target": "attention_output",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    },
+    {
+      "source": "value_proj",
+      "target": "attention_output",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    },
+    {
+      "source": "attention_output",
+      "target": "ffn_1",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    },
+    {
+      "source": "ffn_1",
+      "target": "ffn_2",
+      "tensor_shape": [
+        32,
+        2048
+      ]
+    },
+    {
+      "source": "ffn_2",
+      "target": "layer_norm",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    },
+    {
+      "source": "layer_norm",
+      "target": "output",
+      "tensor_shape": [
+        32,
+        512
+      ]
+    }
+  ],
+  "layout_options": {
+    "input_embedding": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "query_proj": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "key_proj": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "value_proj": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "attention_scores": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "attention_output": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "ffn_1": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "ffn_2": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "layer_norm": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ],
+    "output": [
+      {
+        "id": 0,
+        "partition_axes": [],
+        "description": "Layout_0"
+      },
+      {
+        "id": 1,
+        "partition_axes": [
+          0
+        ],
+        "description": "Layout_1"
+      },
+      {
+        "id": 2,
+        "partition_axes": [
+          1
+        ],
+        "description": "Layout_2"
+      },
+      {
+        "id": 3,
+        "partition_axes": [
+          0,
+          1
+        ],
+        "description": "Layout_3"
+      }
+    ]
+  }
+}
